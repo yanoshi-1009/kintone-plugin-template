@@ -1,0 +1,11 @@
+{
+  "app": "",
+  "scope": "ALL",
+  "desktop": {
+    "js": ["bundled_index.js"],
+    "css": []
+  },
+  "mobile": {
+    "js": []
+  }
+}
