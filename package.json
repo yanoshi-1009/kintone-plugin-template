@@ -44,5 +44,9 @@
     "webpack-merge": "^4.2.1",
     "webpack-stream": "^5.2.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "csv-parser": "^2.2.0",
+    "neat-csv": "^5.0.0",
+    "papaparse": "^4.6.3"
+  }
 }
