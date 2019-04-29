@@ -1,8 +1,8 @@
 {
-  "app": "244",
+  "app": "",
   "scope": "ALL",
   "desktop": {
-    "js": ["https://js.cybozu.com/jquery/3.4.0/jquery.min.js", "bundle.js"],
+    "js": ["bundled_index.js"],
     "css": []
   },
   "mobile": {

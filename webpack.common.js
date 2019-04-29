@@ -5,8 +5,8 @@ const BundleAnalyzerPlugin = require("webpack-bundle-analyzer")
 module.exports = {
   entry: "./src/index.js",
   output: {
-    filename: "bundle.js",
-    path: path.resolve(__dirname, "dist")
+    filename: "bundled_index.js",
+    path: path.join(__dirname, "./dist/")
   },
   module: {
     rules: [
