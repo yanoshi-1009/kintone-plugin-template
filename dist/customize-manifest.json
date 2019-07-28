@@ -1,9 +1,9 @@
 {
-  "app": "408",
+  "app": "",
   "scope": "ALL",
   "desktop": {
-    "js": ["bundled_index.js", "kintone-ui-component.min.js"],
-    "css": ["kintone-ui-component.min.css"]
+    "js": ["bundled_index.js"],
+    "css": []
   },
   "mobile": {
     "js": []
