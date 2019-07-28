@@ -25,24 +25,26 @@
   ],
   "description": "",
   "devDependencies": {
-    "@babel/cli": "^7.4.4",
-    "@babel/core": "^7.4.5",
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
     "@babel/polyfill": "^7.4.4",
-    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-env": "^7.5.5",
     "@cybozu/eslint-config": "^3.2.1",
     "@kintone/create-plugin": "^1.4.4",
     "@kintone/customize-uploader": "^1.5.3",
     "@kintone/webpack-plugin-kintone-plugin": "^1.0.12",
     "babel-loader": "^8.0.6",
     "eslint": "^5.16.0",
-    "eslint-loader": "^2.1.2",
+    "eslint-loader": "^2.2.1",
     "prettier": "^1.18.2",
-    "typescript": "^3.5.2",
-    "webpack": "^4.35.0",
+    "typescript": "^3.5.3",
+    "webpack": "^4.38.0",
     "webpack-bundle-analyzer": "^3.3.2",
-    "webpack-cli": "^3.3.5",
+    "webpack-cli": "^3.3.6",
     "webpack-merge": "^4.2.1",
     "webpack-stream": "^5.2.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@kintone/kintone-js-sdk": "^0.4.0"
+  }
 }
