@@ -1,10 +1,10 @@
 module.exports = {
-  extends: "@cybozu/eslint-config/presets/prettier",
+  extends: '@cybozu/eslint-config',
   globals: {
     kintone: true
   },
   env: {},
   rules: {
-    "vars-on-top": ["off"]
+    "vars-on-top": ['off']
   }
 };

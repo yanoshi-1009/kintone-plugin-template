@@ -1,17 +1,25 @@
-const path = require("path");
+const path = require('path');
 
 module.exports = {
-  entry: "./src/index.js",
+  entry: {main: './src/index.js'},
   output: {
-    filename: "bundled_index.js",
-    path: path.join(__dirname, "./dist/")
+    filename: 'index_bundle.js',
+    path: __dirname + '/'
+  },
+  resolve: {
+    alias: {
+      modules: path.join(__dirname, 'node_modules'),
+      common: path.join(__dirname, 'common')
+    }
   },
   module: {
     rules: [
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        use: ["babel-loader"]
+        use: {
+          loader: 'babel-loader'
+        }
       }
     ]
   },
