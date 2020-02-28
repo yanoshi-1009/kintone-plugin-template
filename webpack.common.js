@@ -4,7 +4,7 @@ module.exports = {
   entry: {main: './src/index.js'},
   output: {
     filename: 'index_bundle.js',
-    path: __dirname + '/'
+    path: __dirname + '/dist/'
   },
   resolve: {
     alias: {
