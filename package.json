@@ -28,7 +28,6 @@
     "@kintone/create-plugin": "^3.0.2",
     "@kintone/webpack-plugin-kintone-plugin": "^4.0.1",
     "babel-loader": "^8.0.6",
-    "babel-preset-stage-0": "^6.24.1",
     "css-loader": "^3.4.2",
     "eslint": "^6.8.0",
     "eslint-loader": "^3.0.3",
@@ -37,8 +36,7 @@
     "typescript": "^3.8.3",
     "webpack": "^4.41.6",
     "webpack-cli": "^3.3.11",
-    "webpack-merge": "^4.2.2",
-    "webpack-stream": "^5.2.1"
+    "webpack-merge": "^4.2.2"
   },
   "dependencies": {
     "@kintone/kintone-ui-component": "^0.6.0",
