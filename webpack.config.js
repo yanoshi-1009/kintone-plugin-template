@@ -11,13 +11,6 @@ module.exports = {
       common: path.join(__dirname, 'common')
     }
   },
-  devServer: {
-    contentBase: path.join(__dirname, 'dist'),
-    compress: true,
-    https: true,
-    port: 5500,
-    open: true
-  },
   module: {
     rules: [
       {

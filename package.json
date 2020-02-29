@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build:dev": "webpack-dev-server --debug --devtool eval-source-map --output-pathinfo",
-    "build:prod": "webpack -p"
+    "build:prod": "webpack -p",
+    "build:dev": "webpack --debug --devtool eval-source-map --output-pathinfo -w"
   },
   "keywords": [],
   "repository": {},
@@ -37,7 +37,6 @@
     "url-loader": "^3.0.0",
     "webpack": "^4.41.6",
     "webpack-cli": "^3.3.11",
-    "webpack-dev-server": "^3.10.3",
     "webpack-merge": "^4.2.2"
   },
   "dependencies": {
