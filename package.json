@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "webpack_dev": "webpack --config webpack.dev.js",
-    "webpack_prod": "webpack --config webpack.prod.js"
+    "build:dev": "webpack --config webpack.dev.js",
+    "build:prod": "webpack --config webpack.prod.js"
   },
   "keywords": [],
   "repository": {},
