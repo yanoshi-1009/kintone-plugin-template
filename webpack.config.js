@@ -1,5 +1,6 @@
 const path = require('path');
 module.exports = {
+  mode: 'development', // productionにしたい場合はコマンドラインで上書き可能
   entry: { main: './src/js/index.js' },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -37,5 +38,8 @@ module.exports = {
         use: ['url-loader']
       }
     ]
+  },
+  performance: {
+    hints: false
   }
 };
