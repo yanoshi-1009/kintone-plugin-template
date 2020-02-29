@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "build:prod": "webpack -p",
-    "build:dev": "webpack --debug --devtool eval-source-map --output-pathinfo -w"
+    "build:dev": "webpack --debug --devtool eval-source-map --outßßßput-pathinfo -w"
   },
   "keywords": [],
   "repository": {},
@@ -36,8 +36,7 @@
     "typescript": "^3.8.3",
     "url-loader": "^3.0.0",
     "webpack": "^4.41.6",
-    "webpack-cli": "^3.3.11",
-    "webpack-merge": "^4.2.2"
+    "webpack-cli": "^3.3.11"
   },
   "dependencies": {
     "@kintone/kintone-ui-component": "^0.6.0",
