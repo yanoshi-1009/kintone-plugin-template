@@ -1,7 +1,7 @@
 module.exports = {
   extends: '@cybozu',
   globals: {
-    kintone: true
+    kintone: false
   },
   rules: {
     "vars-on-top": ['off']
