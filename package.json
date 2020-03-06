@@ -22,11 +22,9 @@
   "description": "",
   "devDependencies": {
     "@babel/cli": "^7.8.4",
-    "@babel/core": "^7.8.6",
-    "@babel/preset-env": "^7.8.6",
+    "@babel/core": "^7.8.7",
+    "@babel/preset-env": "^7.8.7",
     "@cybozu/eslint-config": "*",
-    "@kintone/create-plugin": "^3.0.2",
-    "@kintone/webpack-plugin-kintone-plugin": "^4.0.1",
     "babel-loader": "^8.0.6",
     "css-loader": "^3.4.2",
     "eslint": "^6.8.0",
@@ -42,7 +40,7 @@
     "@kintone/kintone-ui-component": "^0.6.0",
     "@kintone/rest-api-client": "^1.0.0",
     "core-js": "^3.6.4",
-    "cross-env": "^7.0.1",
+    "cross-env": "^7.0.2",
     "regenerator-runtime": "^0.13.3"
   }
 }
