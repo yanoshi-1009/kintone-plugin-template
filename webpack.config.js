@@ -1,10 +1,15 @@
 const path = require('path');
+const KintonePlugin = require('@kintone/webpack-plugin-kintone-plugin');
 module.exports = {
   mode: 'development', // productionにしたい場合はコマンドラインで上書き可能
-  entry: { main: './src/js/index.js' },
+  entry: {
+    config: './src/config.js',
+    desktop: './src/desktop.js',
+    mobile: './src/mobile.js'
+  },
   output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: '[name]_bundle.js'
+    path: path.resolve(__dirname, 'plugin', 'js'),
+    filename: '[name].js'
   },
   resolve: {
     alias: {
@@ -39,6 +44,13 @@ module.exports = {
       }
     ]
   },
+  plugins: [
+    new KintonePlugin({
+      manifestJSONPath: './plugin/manifest.json',
+      privateKeyPath: './private.ppk',
+      pluginZipPath: './dist/plugin.zip'
+    })
+  ],
   performance: {
     hints: false
   }
