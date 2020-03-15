@@ -1,4 +1,5 @@
 (PLUGIN_ID => {
   'use strict';
-  kintone.plugin.app.getConfig(PLUGIN_ID);
+  const CONFIG = kintone.plugin.app.getConfig(PLUGIN_ID);
+  console.log(CONFIG);
 })(kintone.$PLUGIN_ID);
