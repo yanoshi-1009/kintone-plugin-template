@@ -26,7 +26,7 @@
     "@babel/core": "7.8.7",
     "@babel/preset-env": "7.8.7",
     "@cybozu/eslint-config": "*",
-    "@kintone/create-plugin": "3.0.2",
+    "@kintone/create-plugin": "3.0.3",
     "@kintone/webpack-plugin-kintone-plugin": "4.0.1",
     "babel-loader": "8.0.6",
     "css-loader": "3.4.2",
