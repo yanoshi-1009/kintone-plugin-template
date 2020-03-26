@@ -3,12 +3,12 @@ const KintonePlugin = require('@kintone/webpack-plugin-kintone-plugin');
 module.exports = {
   mode: 'development', // productionにしたい場合はコマンドラインで上書き可能
   entry: {
-    config: './src/config.js',
-    desktop: './src/desktop.js',
-    mobile: './src/mobile.js'
+    config: './src/js/config.js',
+    desktop: './src/js/desktop.js',
+    mobile: './src/js/mobile.js'
   },
   output: {
-    path: path.resolve(__dirname, 'plugin', 'js'),
+    path: path.resolve(__dirname, 'dist', 'js'),
     filename: '[name].js'
   },
   resolve: {

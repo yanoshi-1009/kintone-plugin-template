@@ -1,18 +1,17 @@
 {
-  "name": "kintone-custmization",
+  "name": "kintone-plugin-master",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "node scripts/npm-start.js",
     "upload": "kintone-plugin-uploader dist/plugin.zip --watch --waiting-dialog-ms 3000",
     "build:prod": "webpack -p",
-    "build:dev": "webpack --debug --devtool eval-source-map --output-pathinfo -w",
-    "lint": "eslint src"
+    "build:dev": "webpack --debug --devtool eval-source-map --output-pathinfo -w"
   },
   "keywords": [],
   "repository": {},
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
+  "description": "This is kintone plugin master.",
   "browserslist": [
     "last 1 ie version",
     "last 1 Edge version",
@@ -22,7 +21,6 @@
     "last 2 iOS versions",
     "last 1 ChromeAndroid version"
   ],
-  "description": "",
   "devDependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.9.0",
