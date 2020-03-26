@@ -20,7 +20,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader'
@@ -46,8 +46,8 @@ module.exports = {
   },
   plugins: [
     new KintonePlugin({
-      manifestJSONPath: './plugin/manifest.json',
-      privateKeyPath: './private.ppk',
+      manifestJSONPath: './manifest.json',
+      privateKeyPath: './private.key',
       pluginZipPath: './dist/plugin.zip'
     })
   ],
