@@ -2,7 +2,7 @@
   "extends": [
     "config:base",
     ":automergeMinor",
-    ":maintainLockFilesWeekly"
+    ":maintainLockFilesMonthly"
   ],
   "timezone": "Asia/Tokyo",
   "schedule": "before 2am"
