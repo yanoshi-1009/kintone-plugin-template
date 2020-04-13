@@ -1,8 +1,18 @@
 {
   "extends": [
-    "config:base",
     ":automergeMinor",
-    ":maintainLockFilesMonthly"
+    ":maintainLockFilesMonthly",
+    ":separateMajorReleases",
+    ":combinePatchMinorReleases",
+    ":ignoreUnstable",
+    ":prImmediately",
+    ":semanticPrefixFixDepsChoreOthers",
+    ":updateNotScheduled",
+    ":ignoreModulesAndTests",
+    ":autodetectPinVersions",
+    "group:monorepos",
+    "group:recommended",
+    "helpers:disableTypesNodeMajor"
   ],
   "timezone": "Asia/Tokyo",
   "schedule": "before 2am"
