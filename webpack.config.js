@@ -39,6 +39,19 @@ module.exports = {
         ]
       },
       {
+        test: /\.s[ac]ss$/,
+        use: [
+          'style-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              url: false
+            }
+          },
+          'sass-loader'
+        ]
+      },
+      {
         test: /.(png|jpg|jpeg|gif|svg|woff|woff2|eot|ttf)(\?v=\d+\.\d+\.\d+)?$/i,
         use: ['url-loader']
       }
