@@ -1,6 +1,7 @@
 {
   "extends": [
     ":automergeMinor",
+    ":automergeBranch",
     ":maintainLockFilesMonthly",
     ":separateMajorReleases",
     ":combinePatchMinorReleases",
