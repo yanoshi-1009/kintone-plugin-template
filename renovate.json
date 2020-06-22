@@ -1,20 +1,14 @@
+
 {
-  "extends": [
-    ":automergeMinor",
-    ":automergeBranch",
-    ":maintainLockFilesMonthly",
-    ":separateMajorReleases",
-    ":combinePatchMinorReleases",
-    ":ignoreUnstable",
-    ":prImmediately",
-    ":semanticPrefixFixDepsChoreOthers",
-    ":updateNotScheduled",
-    ":ignoreModulesAndTests",
-    ":autodetectPinVersions",
-    "group:monorepos",
-    "group:recommended",
-    "helpers:disableTypesNodeMajor"
-  ],
+  "extends": ["config:base", ":maintainLockFilesWeekly"],
   "timezone": "Asia/Tokyo",
-  "schedule": "before 2am"
+  "schedule": "before 2am",
+  "labels": ["renovate"],
+  "patch": { "automerge": true },
+  "packageRules": [
+    {
+      "depTypeList": ["devDependencies"],
+      "automerge": true
+    }
+  ]
 }
