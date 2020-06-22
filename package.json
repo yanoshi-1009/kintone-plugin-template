@@ -19,7 +19,7 @@
     "@babel/preset-react": "7.10.1",
     "@babel/preset-typescript": "7.10.1",
     "@cybozu/eslint-config": "11.0.0",
-    "@kintone/create-plugin": "3.0.5",
+    "@kintone/create-plugin": "3.0.6",
     "@kintone/webpack-plugin-kintone-plugin": "4.0.3",
     "babel-loader": "8.1.0",
     "css-loader": "3.6.0",
