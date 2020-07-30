@@ -1,6 +1,18 @@
 {
-  "extends": ["config:base", ":maintainLockFilesWeekly", ":automergeMinor"],
+  "extends": [
+    "config:base",
+    ":pinAllExceptPeerDependencies",
+    ":maintainLockFilesWeekly",
+    ":automergeMinor"
+  ],
   "timezone": "Asia/Tokyo",
   "schedule": "before 2am",
-  "labels": ["renovate"]
+  "labels": ["renovate"],
+  "patch": {"automerge": true},
+  "packageRules": [
+    {
+      "depTypeList": ["devDependencies"],
+      "automerge": true
+    }
+  ]
 }
