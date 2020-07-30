@@ -8,5 +8,5 @@
   "timezone": "Asia/Tokyo",
   "schedule": "before 2am",
   "labels": ["renovate"],
-  "lockFileMaintenance": { "automerge": true}
+  "lockFileMaintenance": {"automerge": true}
 }
