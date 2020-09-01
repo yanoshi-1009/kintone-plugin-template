@@ -13,9 +13,9 @@
   "license": "MIT",
   "description": "This is kintone plugin master.",
   "devDependencies": {
-    "@babel/cli": "7.10.5",
-    "@babel/core": "7.11.4",
-    "@babel/preset-env": "7.11.0",
+    "@babel/cli": "7.11.5",
+    "@babel/core": "7.11.5",
+    "@babel/preset-env": "7.11.5",
     "@babel/preset-react": "7.10.4",
     "@babel/preset-typescript": "7.10.4",
     "@cybozu/eslint-config": "11.0.0",
