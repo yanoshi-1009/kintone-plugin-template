@@ -44,6 +44,6 @@
     "react": "16.14.0",
     "react-dom": "16.14.0",
     "regenerator-runtime": "0.13.7",
-    "sweetalert2": "10.7.0"
+    "sweetalert2": "10.8.1"
   }
 }
