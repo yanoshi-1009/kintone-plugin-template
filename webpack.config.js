@@ -27,33 +27,19 @@ module.exports = {
         }
       },
       {
-        test: /\.css$/,
+        test: /\.(sa|sc|c)ss$/,
         use: [
           'style-loader',
           {
             loader: 'css-loader',
-            options: {
-              url: false
-            }
-          }
-        ]
-      },
-      {
-        test: /\.s[ac]ss$/,
-        use: [
-          'style-loader',
-          {
-            loader: 'css-loader',
-            options: {
-              url: false
-            }
+            options: {url: false}
           },
           'sass-loader'
         ]
       },
       {
         test: /.(png|jpg|jpeg|gif|svg|woff|woff2|eot|ttf)(\?v=\d+\.\d+\.\d+)?$/i,
-        use: ['url-loader']
+        type: 'asset'
       }
     ]
   },
@@ -63,8 +49,5 @@ module.exports = {
       privateKeyPath: './private.key',
       pluginZipPath: './dist/plugin.zip'
     })
-  ],
-  performance: {
-    hints: false
-  }
+  ]
 };
