@@ -38,7 +38,7 @@
     "@kintone/kintone-ui-component": "0.7.4",
     "@kintone/rest-api-client": "1.7.1",
     "core-js": "3.8.0",
-    "cross-env": "7.0.2",
+    "cross-env": "7.0.3",
     "jquery": "3.5.1",
     "luxon": "1.25.0",
     "react": "17.0.1",
