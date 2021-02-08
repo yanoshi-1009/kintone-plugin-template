@@ -22,7 +22,7 @@
     "@kintone/create-plugin": "3.1.5",
     "@kintone/webpack-plugin-kintone-plugin": "4.0.11",
     "babel-loader": "8.2.2",
-    "css-loader": "5.0.1",
+    "css-loader": "5.0.2",
     "eslint": "7.19.0",
     "eslint-loader": "4.0.2",
     "node-sass": "5.0.0",
