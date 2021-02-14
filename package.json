@@ -4,8 +4,8 @@
   "main": "index.js",
   "scripts": {
     "upload": "kintone-plugin-uploader dist/plugin.zip --watch --waiting-dialog-ms 3000",
-    "build:prod": "webpack --mode production",
-    "build:dev": "webpack --devtool eval-source-map --output-pathinfo -w"
+    "build:prod": "webpack --mode=production",
+    "build:dev": "webpack --mode=development --devtool=eval-source-map"
   },
   "keywords": ["kintone"],
   "repository": {},
