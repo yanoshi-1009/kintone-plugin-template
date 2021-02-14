@@ -6,7 +6,7 @@ module.exports = (env, argv) => ({
     mobile: './src/js/mobile.js'
   },
   output: {
-    path: __dirname + 'dist/js',
+    path: __dirname + '/dist/js',
     filename: '[name].js'
   },
   resolve: {
