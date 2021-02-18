@@ -20,7 +20,7 @@
     "@babel/preset-typescript": "7.12.17",
     "@cybozu/eslint-config": "11.0.4",
     "@kintone/plugin-uploader": "4.2.4",
-    "@kintone/webpack-plugin-kintone-plugin": "4.0.12",
+    "@kintone/webpack-plugin-kintone-plugin": "4.0.13",
     "babel-loader": "8.2.2",
     "css-loader": "5.0.2",
     "eslint": "7.20.0",
