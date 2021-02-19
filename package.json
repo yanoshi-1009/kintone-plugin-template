@@ -37,7 +37,7 @@
   "dependencies": {
     "@kintone/kintone-ui-component": "0.7.7",
     "@kintone/rest-api-client": "1.10.0",
-    "core-js": "3.8.3",
+    "core-js": "3.9.0",
     "cross-env": "7.0.3",
     "jquery": "3.5.1",
     "luxon": "1.26.0",
