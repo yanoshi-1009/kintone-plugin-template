@@ -3,7 +3,7 @@
   "version": 1,
   "type": "APP",
   "name": {
-    "ja":"XXXX",
+    "ja": "XXXX",
     "en": "XXXX"
   },
   "description": {
@@ -12,21 +12,14 @@
   },
   "icon": "src/image/icon.png",
   "desktop": {
-    "js": [
-      "dist/js/desktop.js"
-    ]
+    "js": ["dist/js/desktop.js"]
   },
   "mobile": {
-    "js": [
-      "dist/js/mobile.js"
-    ]
+    "js": ["dist/js/mobile.js"]
   },
   "config": {
     "html": "src/html/config.html",
-    "js": [
-      "dist/js/config.js"
-    ],
-    "required_params": [
-    ]
+    "js": ["dist/js/config.js"],
+    "required_params": []
   }
 }
