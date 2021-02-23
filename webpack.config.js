@@ -3,24 +3,24 @@ module.exports = (env, argv) => ({
   entry: {
     config: "./src/js/config.js",
     desktop: "./src/js/desktop.js",
-    mobile: "./src/js/mobile.js",
+    mobile: "./src/js/mobile.js"
   },
   output: {
     path: __dirname + "/dist/js",
-    filename: "[name].js",
+    filename: "[name].js"
   },
   resolve: {
     alias: {
       modules: __dirname + "/node_modules",
-      common: __dirname + "/common",
-    },
+      common: __dirname + "/common"
+    }
   },
   module: {
     rules: [
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        use: ["babel-loader"],
+        use: ["babel-loader"]
       },
       {
         test: /\.(sa|sc|c)ss$/,
@@ -28,22 +28,22 @@ module.exports = (env, argv) => ({
           "style-loader",
           {
             loader: "css-loader",
-            options: {url: false},
+            options: { url: false }
           },
-          "sass-loader",
-        ],
+          "sass-loader"
+        ]
       },
       {
         test: /.(png|jpg|jpeg|gif|svg|woff|woff2|eot|ttf)(\?v=\d+\.\d+\.\d+)?$/i,
-        type: "asset",
-      },
-    ],
+        type: "asset"
+      }
+    ]
   },
   plugins: [
     new KintonePlugin({
       manifestJSONPath: "./manifest.json",
       privateKeyPath: "./private.key",
-      pluginZipPath: "./dist/plugin.zip",
-    }),
-  ],
+      pluginZipPath: "./dist/plugin.zip"
+    })
+  ]
 });

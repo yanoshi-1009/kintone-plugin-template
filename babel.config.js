@@ -6,16 +6,16 @@ module.exports = function (api) {
       "@babel/preset-env",
       {
         useBuiltIns: "usage",
-        corejs: 3,
-      },
+        corejs: 3
+      }
     ],
     "@babel/preset-react",
-    "@babel/preset-typescript",
+    "@babel/preset-typescript"
   ];
   const plugins = [];
 
   return {
     presets,
-    plugins,
+    plugins
   };
 };
