@@ -24,7 +24,7 @@
     "@kintone/plugin-uploader": "4.2.4",
     "@kintone/webpack-plugin-kintone-plugin": "4.0.13",
     "babel-loader": "8.2.2",
-    "css-loader": "5.1.0",
+    "css-loader": "5.1.1",
     "eslint": "7.21.0",
     "eslint-loader": "4.0.2",
     "node-sass": "5.0.0",
