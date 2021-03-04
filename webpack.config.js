@@ -1,5 +1,5 @@
 const KintonePlugin = require("@kintone/webpack-plugin-kintone-plugin");
-module.exports = (env, argv) => ({
+module.exports = {
   entry: {
     config: "./src/js/config.js",
     desktop: "./src/js/desktop.js",
@@ -46,4 +46,4 @@ module.exports = (env, argv) => ({
       pluginZipPath: "./dist/plugin.zip"
     })
   ]
-});
+};
