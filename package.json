@@ -10,7 +10,10 @@
   "keywords": [
     "kintone"
   ],
-  "repository": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yanoshi-1009/kintone-plugin-template"
+  },
   "author": "y.idakko@gmail.com",
   "license": "MIT",
   "description": "This is kintone plugin master.",
