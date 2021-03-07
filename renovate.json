@@ -8,7 +8,7 @@
     ":skipStatusChecks"
   ],
   "timezone": "Asia/Tokyo",
-  "schedule": "before 2am",
+  "schedule": "before 3am",
   "labels": ["renovate"],
   "lockFileMaintenance": {
     "automerge": true
