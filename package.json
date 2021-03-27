@@ -19,9 +19,9 @@
   "description": "This is kintone plugin master.",
   "devDependencies": {
     "@babel/cli": "7.13.10",
-    "@babel/core": "7.13.10",
+    "@babel/core": "7.13.13",
     "@babel/preset-env": "7.13.12",
-    "@babel/preset-react": "7.12.13",
+    "@babel/preset-react": "7.13.13",
     "@babel/preset-typescript": "7.13.0",
     "@cybozu/eslint-config": "12.0.1",
     "@kintone/plugin-uploader": "4.3.0",
