@@ -27,7 +27,7 @@
     "@kintone/plugin-uploader": "4.3.0",
     "@kintone/webpack-plugin-kintone-plugin": "4.0.20",
     "babel-loader": "8.2.2",
-    "css-loader": "5.2.1",
+    "css-loader": "5.2.2",
     "eslint": "7.24.0",
     "node-sass": "5.0.0",
     "prettier": "2.2.1",
