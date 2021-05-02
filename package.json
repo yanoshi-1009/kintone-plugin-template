@@ -44,6 +44,6 @@
     "jquery": "3.6.0",
     "luxon": "1.26.0",
     "regenerator-runtime": "0.13.7",
-    "sweetalert2": "10.16.6"
+    "sweetalert2": "10.16.7"
   }
 }
