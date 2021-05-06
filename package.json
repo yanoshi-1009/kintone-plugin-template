@@ -35,7 +35,7 @@
     "style-loader": "2.0.0",
     "typescript": "4.2.4",
     "webpack": "5.36.2",
-    "webpack-cli": "4.6.0"
+    "webpack-cli": "4.7.0"
   },
   "dependencies": {
     "@kintone/kintone-ui-component": "0.7.8",
