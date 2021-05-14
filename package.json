@@ -42,7 +42,7 @@
     "@kintone/rest-api-client": "1.13.0",
     "core-js": "3.12.1",
     "jquery": "3.6.0",
-    "luxon": "1.26.0",
+    "luxon": "1.27.0",
     "regenerator-runtime": "0.13.7",
     "sweetalert2": "10.16.7"
   }
