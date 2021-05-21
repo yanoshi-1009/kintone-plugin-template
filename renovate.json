@@ -12,5 +12,11 @@
   "labels": ["renovate"],
   "lockFileMaintenance": {
     "automerge": true
-  }
+  },
+   "packageRules": [
+    {
+      "matchPackagePatterns": ["sweetalert2"],
+      "allowedVersions": "<11.0.0"
+    }
+  ]
 }
