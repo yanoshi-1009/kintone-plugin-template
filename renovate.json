@@ -13,10 +13,14 @@
   "lockFileMaintenance": {
     "automerge": true
   },
-   "packageRules": [
+  "packageRules": [
     {
       "matchPackagePatterns": ["sweetalert2"],
       "allowedVersions": "<11.0.0"
+    },
+    {
+      "matchPackagePatterns": ["@cybozu/eslint-config"],
+      "automerge": true
     }
   ]
 }
