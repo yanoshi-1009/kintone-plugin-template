@@ -38,7 +38,7 @@
     "webpack-cli": "4.7.0"
   },
   "dependencies": {
-    "@kintone/kintone-ui-component": "0.7.8",
+    "@kintone/kintone-ui-component": "0.8.0",
     "@kintone/rest-api-client": "2.0.2",
     "core-js": "3.12.1",
     "jquery": "3.6.0",
