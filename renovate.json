@@ -10,7 +10,7 @@
   "timezone": "Asia/Tokyo",
   "schedule": "before 3am",
   "labels": ["renovate"],
-  "assigneesFromCodeOwners": true,
+  "assignees": ["yanoshi-1009"],
   "rangeStrategy": "bump",
   "lockFileMaintenance": {
     "automerge": true
