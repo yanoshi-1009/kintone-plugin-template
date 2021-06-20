@@ -10,6 +10,8 @@
   "timezone": "Asia/Tokyo",
   "schedule": "before 3am",
   "labels": ["renovate"],
+  "assigneesFromCodeOwners": true,
+  "rangeStrategy": "bump",
   "lockFileMaintenance": {
     "automerge": true
   },
