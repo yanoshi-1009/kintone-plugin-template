@@ -43,7 +43,7 @@
     "core-js": "^3.15.2",
     "jquery": "^3.6.0",
     "luxon": "^2.0.1",
-    "regenerator-runtime": "^0.13.7",
+    "regenerator-runtime": "^0.13.9",
     "sweetalert2": "^11.0.19"
   }
 }
