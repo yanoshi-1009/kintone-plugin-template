@@ -12,14 +12,14 @@
   },
   "icon": "src/image/icon.png",
   "desktop": {
-    "js": ["https://127.0.0.1:5501/dist/js/desktop.js"]
+    "js": ["dist/js/desktop.js"]
   },
   "mobile": {
-    "js": ["https://127.0.0.1:5501/dist/js/mobile.js"]
+    "js": ["dist/js/mobile.js"]
   },
   "config": {
     "html": "src/html/config.html",
-    "js": ["https://127.0.0.1:5501/dist/js/config.js"],
+    "js": ["dist/js/config.js"],
     "required_params": []
   }
 }
