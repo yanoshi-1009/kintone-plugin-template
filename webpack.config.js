@@ -1,4 +1,5 @@
 const KintonePlugin = require("@kintone/webpack-plugin-kintone-plugin");
+const TerserPlugin = require("terser-webpack-plugin");
 module.exports = {
   entry: {
     config: "./src/js/config.js",
@@ -45,5 +46,12 @@ module.exports = {
       privateKeyPath: "./private.key",
       pluginZipPath: "./dist/plugin.zip"
     })
-  ]
+  ],
+  optimization: {
+    minimizer: [
+      new TerserPlugin({
+        extractComments: false
+      })
+    ]
+  }
 };
