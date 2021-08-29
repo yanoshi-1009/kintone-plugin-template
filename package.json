@@ -19,31 +19,31 @@
   "description": "This is kintone plugin master.",
   "devDependencies": {
     "@babel/cli": "^7.14.8",
-    "@babel/core": "^7.14.8",
-    "@babel/preset-env": "^7.14.8",
+    "@babel/core": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
     "@babel/preset-react": "^7.14.5",
-    "@babel/preset-typescript": "^7.14.5",
+    "@babel/preset-typescript": "^7.15.0",
     "@cybozu/eslint-config": "^14.0.2",
-    "@kintone/plugin-uploader": "^5.0.6",
-    "@kintone/webpack-plugin-kintone-plugin": "^5.0.10",
+    "@kintone/plugin-uploader": "^6.0.0",
+    "@kintone/webpack-plugin-kintone-plugin": "^5.0.14",
     "babel-loader": "^8.2.2",
     "css-loader": "^6.2.0",
-    "eslint": "^7.31.0",
+    "eslint": "^7.32.0",
     "node-sass": "^6.0.1",
     "prettier": "^2.3.2",
     "sass-loader": "^12.1.0",
     "style-loader": "^3.2.1",
-    "typescript": "^4.3.5",
-    "webpack": "^5.46.0",
-    "webpack-cli": "^4.7.2"
+    "typescript": "^4.4.2",
+    "webpack": "^5.51.1",
+    "webpack-cli": "^4.8.0"
   },
   "dependencies": {
     "@kintone/kintone-ui-component": "^0.8.1",
-    "@kintone/rest-api-client": "^2.0.11",
-    "core-js": "^3.15.2",
+    "@kintone/rest-api-client": "^2.0.16",
+    "core-js": "^3.16.3",
     "jquery": "^3.6.0",
-    "luxon": "^2.0.1",
+    "luxon": "^2.0.2",
     "regenerator-runtime": "^0.13.9",
-    "sweetalert2": "^11.0.20"
+    "sweetalert2": "^11.1.4"
   }
 }
