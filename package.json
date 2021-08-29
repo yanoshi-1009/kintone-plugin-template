@@ -5,7 +5,8 @@
   "scripts": {
     "upload": "kintone-plugin-uploader dist/plugin.zip --watch --waiting-dialog-ms 3000",
     "build:prod": "webpack --mode=production",
-    "build:dev": "webpack --mode=development --devtool=eval-source-map"
+    "build:dev": "webpack --mode=development --devtool=eval-source-map",
+    "build:dev-watch": "webpack --mode=development --devtool=eval-source-map --watch"
   },
   "keywords": [
     "kintone"
@@ -41,6 +42,7 @@
     "@kintone/kintone-ui-component": "^0.8.1",
     "@kintone/rest-api-client": "^2.0.16",
     "core-js": "^3.16.3",
+    "dayjs": "^1.10.6",
     "jquery": "^3.6.0",
     "luxon": "^2.0.2",
     "regenerator-runtime": "^0.13.9",
