@@ -26,7 +26,7 @@
     "@babel/preset-typescript": "^7.15.0",
     "@cybozu/eslint-config": "^14.0.3",
     "@kintone/plugin-uploader": "^6.0.3",
-    "@kintone/webpack-plugin-kintone-plugin": "^5.0.17",
+    "@kintone/webpack-plugin-kintone-plugin": "^5.0.18",
     "babel-loader": "^8.2.2",
     "css-loader": "^6.3.0",
     "eslint": "^7.32.0",
