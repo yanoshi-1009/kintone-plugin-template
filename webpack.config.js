@@ -47,10 +47,15 @@ module.exports = {
       pluginZipPath: "./dist/plugin.zip"
     })
   ],
-  optimization: {
+ optimization: {
     minimizer: [
+      // https://webpack.js.org/plugins/terser-webpack-plugin/#preserve-comments
       new TerserPlugin({
-        extractComments: false
+        terserOptions: {
+          format: {
+            comments: /@license/i
+          }
+        }
       })
     ]
   }
