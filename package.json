@@ -39,7 +39,7 @@
     "webpack-cli": "^4.9.1"
   },
   "dependencies": {
-    "@kintone/kintone-ui-component": "^0.8.1",
+    "@kintone/kintone-ui-component": "^0.8.3",
     "@kintone/rest-api-client": "^2.0.23",
     "core-js": "^3.19.0",
     "dayjs": "^1.10.7",
