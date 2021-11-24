@@ -40,7 +40,7 @@
   },
   "dependencies": {
     "@kintone/kintone-ui-component": "^0.8.3",
-    "@kintone/rest-api-client": "^2.0.25",
+    "@kintone/rest-api-client": "^2.0.26",
     "core-js": "^3.19.1",
     "dayjs": "^1.10.7",
     "jquery": "^3.6.0",
