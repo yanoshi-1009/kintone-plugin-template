@@ -31,7 +31,12 @@ module.exports = {
             loader: "css-loader",
             options: { url: false }
           },
-          "sass-loader"
+          {
+            loader: "sass-loader",
+            options: {
+              implementation: require("sass")
+            }
+          }
         ]
       },
       {
@@ -47,7 +52,7 @@ module.exports = {
       pluginZipPath: "./dist/plugin.zip"
     })
   ],
- optimization: {
+  optimization: {
     minimizer: [
       // https://webpack.js.org/plugins/terser-webpack-plugin/#preserve-comments
       new TerserPlugin({
