@@ -27,7 +27,7 @@
     "@cybozu/eslint-config": "^17.0.1",
     "@kintone/plugin-uploader": "^6.0.15",
     "@kintone/webpack-plugin-kintone-plugin": "^5.0.37",
-    "babel-loader": "^8.2.3",
+    "babel-loader": "^8.2.4",
     "css-loader": "^6.7.1",
     "eslint": "^8.11.0",
     "prettier": "^2.6.0",
