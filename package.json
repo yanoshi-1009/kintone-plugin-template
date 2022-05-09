@@ -44,7 +44,7 @@
     "core-js": "^3.22.4",
     "dayjs": "^1.11.2",
     "jquery": "^3.6.0",
-    "luxon": "^2.3.2",
+    "luxon": "^2.4.0",
     "regenerator-runtime": "^0.13.9",
     "sweetalert2": "^11.4.13"
   }
