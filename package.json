@@ -41,7 +41,7 @@
   "dependencies": {
     "@kintone/kintone-ui-component": "^0.9.0",
     "@kintone/rest-api-client": "^2.0.38",
-    "core-js": "^3.22.4",
+    "core-js": "^3.22.5",
     "dayjs": "^1.11.2",
     "jquery": "^3.6.0",
     "luxon": "^2.4.0",
