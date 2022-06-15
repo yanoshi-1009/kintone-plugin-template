@@ -1,0 +1,10 @@
+name: update-babel-config-corejs
+on:
+  pull_request:
+    branches:
+      - "renovate/core-js-3.x"
+  workflow_dispatch:
+
+jobs:
+  call-update-babel-config-corejs:
+    uses: yanoshi-1009/github-actions/.github/workflows/update-babel-config-corejs.yml@main
