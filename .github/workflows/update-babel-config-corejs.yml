@@ -1,6 +1,6 @@
 name: update-babel-config-corejs
 on:
-  pull_request:
+  push:
     branches:
       - "renovate/core-js-3.x"
   workflow_dispatch:
