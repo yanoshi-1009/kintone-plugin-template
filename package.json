@@ -45,6 +45,6 @@
     "core-js": "^3.23.4",
     "dayjs": "^1.11.3",
     "regenerator-runtime": "^0.13.9",
-    "sweetalert2": "^11.4.20"
+    "sweetalert2": "^11.4.22"
   }
 }
