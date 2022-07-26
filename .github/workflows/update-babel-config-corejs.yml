@@ -1,4 +1,4 @@
-name: update-babel-config-corejs
+name: Update babel.config.js core-js version
 on:
   push:
     branches:
