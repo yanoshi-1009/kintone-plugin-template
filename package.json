@@ -50,6 +50,6 @@
     "core-js-pure": "^3.26.0",
     "dayjs": "^1.11.6",
     "kintone-ui-component": "^1.7.0",
-    "sweetalert2": "^11.6.6"
+    "sweetalert2": "^11.6.7"
   }
 }
