@@ -33,7 +33,7 @@
     "@kintone/webpack-plugin-kintone-plugin": "^6.0.18",
     "babel-loader": "^9.1.0",
     "babel-plugin-polyfill-corejs3": "^0.6.0",
-    "css-loader": "^6.7.1",
+    "css-loader": "^6.7.2",
     "eslint": "^8.27.0",
     "prettier": "^2.7.1",
     "sass": "^1.56.1",
