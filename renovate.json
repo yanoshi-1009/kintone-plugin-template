@@ -5,7 +5,7 @@
     ":maintainLockFilesWeekly"
   ],
   "timezone": "Asia/Tokyo",
-  "schedule": "before 3am",
+  "schedule": "before 6am",
   "labels": ["renovate"],
   "assignees": ["yanoshi-1009"],
   "rangeStrategy": "bump",
