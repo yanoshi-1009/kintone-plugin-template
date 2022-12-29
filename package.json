@@ -47,7 +47,7 @@
     "@babel/runtime": "^7.20.7",
     "@kintone/rest-api-client": "^3.2.3",
     "axios": "^1.2.2",
-    "core-js-pure": "^3.27.0",
+    "core-js-pure": "^3.27.1",
     "dayjs": "^1.11.7",
     "kintone-ui-component": "^1.8.0",
     "sweetalert2": "^11.6.16"
