@@ -44,7 +44,7 @@
     "webpack-cli": "^5.0.1"
   },
   "dependencies": {
-    "@babel/runtime": "^7.20.7",
+    "@babel/runtime": "^7.20.13",
     "@kintone/rest-api-client": "^3.3.0",
     "axios": "^1.2.3",
     "core-js-pure": "^3.27.2",
