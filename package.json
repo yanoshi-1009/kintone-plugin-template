@@ -30,7 +30,7 @@
     "@babel/preset-typescript": "^7.21.0",
     "@cybozu/eslint-config": "^18.0.2",
     "@kintone/plugin-uploader": "^7.1.10",
-    "@kintone/webpack-plugin-kintone-plugin": "^6.0.29",
+    "@kintone/webpack-plugin-kintone-plugin": "^6.0.30",
     "babel-loader": "^9.1.2",
     "babel-plugin-polyfill-corejs3": "^0.7.1",
     "css-loader": "^6.7.3",
