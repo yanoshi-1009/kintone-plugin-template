@@ -32,7 +32,7 @@
     "@kintone/plugin-uploader": "^8.0.0",
     "@kintone/webpack-plugin-kintone-plugin": "^7.0.4",
     "babel-loader": "^9.1.2",
-    "babel-plugin-polyfill-corejs3": "^0.8.1",
+    "babel-plugin-polyfill-corejs3": "^0.8.2",
     "css-loader": "^6.8.1",
     "eslint": "^8.44.0",
     "prettier": "^2.8.8",
