@@ -8,7 +8,7 @@
 ## 準備
 
 1. 秘密鍵の作成
-   openssl genpkey -out private.key -algorithm RSA -pkeyopt rsa_keygen_bits:2048 
+   `openssl genrsa -traditional -out private.key`
 2. webpack.config 内のパッケージプラグイン名の変更
 
 ## 手順
