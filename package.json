@@ -49,7 +49,7 @@
     "axios": "^1.6.1",
     "core-js-pure": "^3.33.2",
     "dayjs": "^1.11.10",
-    "kintone-ui-component": "^1.13.0",
+    "kintone-ui-component": "^1.14.0",
     "sweetalert2": "^11.9.0"
   }
 }
