@@ -22,9 +22,9 @@
   },
   "description": "This is kintone plugin master.",
   "devDependencies": {
-    "@babel/cli": "^7.23.0",
+    "@babel/cli": "^7.23.4",
     "@babel/core": "^7.23.3",
-    "@babel/plugin-transform-runtime": "^7.23.3",
+    "@babel/plugin-transform-runtime": "^7.23.4",
     "@babel/preset-env": "^7.23.3",
     "@babel/preset-react": "^7.23.3",
     "@babel/preset-typescript": "^7.23.3",
@@ -44,7 +44,7 @@
     "webpack-cli": "^5.1.4"
   },
   "dependencies": {
-    "@babel/runtime": "^7.23.2",
+    "@babel/runtime": "^7.23.4",
     "@kintone/rest-api-client": "^5.0.3",
     "axios": "^1.6.2",
     "core-js-pure": "^3.33.3",
