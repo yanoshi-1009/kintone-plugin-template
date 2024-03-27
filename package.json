@@ -28,7 +28,7 @@
     "@babel/preset-env": "^7.24.3",
     "@babel/preset-react": "^7.24.1",
     "@babel/preset-typescript": "^7.24.1",
-    "@cybozu/eslint-config": "^22.0.2",
+    "@cybozu/eslint-config": "^23.0.0",
     "@kintone/plugin-uploader": "^9.0.4",
     "@kintone/webpack-plugin-kintone-plugin": "^8.0.6",
     "babel-loader": "^9.1.3",
