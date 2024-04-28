@@ -48,7 +48,7 @@
     "@kintone/rest-api-client": "^5.5.1",
     "axios": "^1.6.8",
     "core-js-pure": "^3.37.0",
-    "dayjs": "^1.11.10",
+    "dayjs": "^1.11.11",
     "kintone-ui-component": "^1.17.0",
     "sweetalert2": "^11.10.8"
   }
