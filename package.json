@@ -35,7 +35,7 @@
     "babel-plugin-polyfill-corejs3": "^0.10.4",
     "css-loader": "^7.1.2",
     "eslint": "^8.57.0",
-    "prettier": "^3.3.0",
+    "prettier": "^3.3.1",
     "sass": "^1.77.4",
     "sass-loader": "^14.2.1",
     "style-loader": "^4.0.0",
