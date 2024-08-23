@@ -46,7 +46,7 @@
   "dependencies": {
     "@babel/runtime": "^7.25.4",
     "@kintone/rest-api-client": "^5.5.2",
-    "axios": "^1.7.4",
+    "axios": "^1.7.5",
     "core-js-pure": "^3.38.1",
     "dayjs": "^1.11.13",
     "kintone-ui-component": "^1.17.1",
