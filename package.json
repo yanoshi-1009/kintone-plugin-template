@@ -31,7 +31,7 @@
     "@cybozu/eslint-config": "^24.0.0",
     "@kintone/plugin-uploader": "^9.1.4",
     "@kintone/webpack-plugin-kintone-plugin": "^8.0.10",
-    "babel-loader": "^9.2.1",
+    "babel-loader": "^10.0.0",
     "babel-plugin-polyfill-corejs3": "^0.11.1",
     "css-loader": "^7.1.2",
     "eslint": "^9.21.0",
