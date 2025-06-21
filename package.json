@@ -4,8 +4,8 @@
   "main": "index.js",
   "scripts": {
     "upload": "kintone-plugin-uploader dist/plugin.zip --watch --waiting-dialog-ms 3000",
-    "build:prod": "node ./scripts/esbuild/build.mjs --mode=production && kintone-plugin-packer --ppk plugin.key --out ./dist/plugin.zip .",
-    "build:dev": "kintone-plugin-packer --ppk plugin.key --out ./dist/plugin.zip . && node ./scripts/esbuild/build.mjs --mode=development"
+    "build:prod": "tsc && node ./scripts/esbuild/build.mjs --mode=production && kintone-plugin-packer --ppk plugin.key --out ./dist/plugin.zip .",
+    "build:dev": "tsc && kintone-plugin-packer --ppk plugin.key --out ./dist/plugin.zip . && node ./scripts/esbuild/build.mjs --mode=development"
   },
   "keywords": [
     "kintone"
@@ -22,6 +22,7 @@
   "description": "This is kintone plugin master.",
   "devDependencies": {
     "@cybozu/eslint-config": "^24.0.0",
+    "@kintone/dts-gen": "^8.1.2",
     "@kintone/plugin-packer": "^8.2.1",
     "@kintone/plugin-uploader": "^9.1.5",
     "esbuild": "^0.25.5",

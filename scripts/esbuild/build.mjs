@@ -23,11 +23,11 @@ if (!["production", "development"].includes(mode)) {
 
 const context = await esbuild.context({
   entryPoints: [
-    "src/appPage/desktop/desktop.js",
+    "src/appPage/desktop/desktop.ts",
     "src/appPage/desktop/desktop.css",
-    "src/appPage/mobile/mobile.js",
+    "src/appPage/mobile/mobile.ts",
     "src/appPage/mobile/mobile.css",
-    "src/configPage/config.js",
+    "src/configPage/config.ts",
     "src/configPage/config.css"
   ],
   bundle: true,
