@@ -24,7 +24,7 @@
     "css": ["dist/appPage/mobile/mobile.css"]
   },
   "config": {
-    "html": "src/html/config.html",
+    "html": "src/configPage/config.html",
     "js": ["dist/configPage/config.js"],
     "css": ["dist/configPage/config.css"],
     "required_params": []
