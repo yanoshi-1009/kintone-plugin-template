@@ -1,7 +1,7 @@
 {
-  "manifest_version": 1,
-  "version": 1,
   "type": "APP",
+  "manifest_version": 1,
+  "version": "1.0.0",
   "name": {
     "ja": "XXXX",
     "en": "XXXX"
@@ -11,15 +11,22 @@
     "en": "XXXX"
   },
   "icon": "src/image/icon.png",
+  "homepage_url": {
+    "ja": "https://kintone.cybozu.co.jp/",
+    "en": "https://www.kintone.com/en-us/"
+  },
   "desktop": {
-    "js": ["dist/js/desktop.js"]
+    "js": ["dist/appPage/desktop/desktop.js"],
+    "css": ["dist/appPage/desktop/desktop.css"]
   },
   "mobile": {
-    "js": ["dist/js/mobile.js"]
+    "js": ["dist/appPage/mobile/mobile.js"],
+    "css": ["dist/appPage/mobile/mobile.css"]
   },
   "config": {
     "html": "src/html/config.html",
-    "js": ["dist/js/config.js"],
+    "js": ["dist/configPage/config.js"],
+    "css": ["dist/configPage/config.css"],
     "required_params": []
   }
 }

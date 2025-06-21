@@ -1,4 +1,6 @@
+.DS_Store
 .vscode/
+.cert/
 node_modules/
 dist/
-private.key
+.key
