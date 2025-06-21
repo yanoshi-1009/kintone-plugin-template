@@ -8,8 +8,5 @@ export default [
         kintone: "readonly"
       }
     }
-  },
-  {
-    ignores: ["node_modules", "dist", "*.config.js"]
   }
 ];

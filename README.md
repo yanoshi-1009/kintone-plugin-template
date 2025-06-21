@@ -8,7 +8,7 @@
 ## 準備
 
 1. 秘密鍵の作成
-   `openssl genrsa -traditional -out private.key`
+   `openssl genrsa -traditional -out plugin.key`
 2. webpack.config 内のパッケージプラグイン名の変更
 
 ## 手順
