@@ -33,7 +33,7 @@
   "dependencies": {
     "@kintone/rest-api-client": "^5.7.4",
     "axios": "^1.10.0",
-    "core-js-pure": "^3.43.0",
+    "core-js-pure": "^3.44.0",
     "dayjs": "^1.11.13",
     "kintone-ui-component": "^1.21.0",
     "sweetalert2": "^11.22.2"
