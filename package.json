@@ -21,7 +21,7 @@
   },
   "description": "This is kintone plugin master.",
   "devDependencies": {
-    "@cybozu/eslint-config": "^24.2.0",
+    "@cybozu/eslint-config": "^24.3.0",
     "@kintone/dts-gen": "^8.1.2",
     "@kintone/plugin-packer": "^8.2.1",
     "@kintone/plugin-uploader": "^9.1.5",
