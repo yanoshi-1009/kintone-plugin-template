@@ -35,6 +35,7 @@
     "axios": "^1.11.0",
     "core-js-pure": "^3.45.1",
     "dayjs": "^1.11.18",
+    "i18next": "^25.5.2",
     "kintone-ui-component": "^1.22.0",
     "sweetalert2": "^11.23.0"
   }
