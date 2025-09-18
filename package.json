@@ -19,7 +19,7 @@
   "engines": {
     "node": "18.x || 20.x || 22.x"
   },
-  "description": "This is kintone plugin master.",
+  "description": "This is kintone plugin template.",
   "devDependencies": {
     "@cybozu/eslint-config": "^24.3.0",
     "@kintone/dts-gen": "^8.1.2",
@@ -32,11 +32,8 @@
   },
   "dependencies": {
     "@kintone/rest-api-client": "^5.7.4",
-    "axios": "^1.11.0",
-    "core-js-pure": "^3.45.1",
     "dayjs": "^1.11.18",
     "i18next": "^25.5.2",
-    "kintone-ui-component": "^1.22.0",
-    "sweetalert2": "^11.23.0"
+    "kintone-ui-component": "^1.22.0"
   }
 }
