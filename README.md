@@ -1,3 +1,8 @@
+dist/
+scripts/
+dist/
+scripts/
+
 # kintone-customization-template
 
 ## English
@@ -14,20 +19,14 @@ This project provides a template for customizing kintone using [esbuild](https:/
 
 ### Initial Setup
 
-Before starting development, generate a self-signed SSL certificate for the local HTTPS server:
-
 ```bash
-mkdir .cert && openssl req -x509 -newkey rsa:4096 -keyout .cert/private.key -out .cert/private.cert -days 9999 -nodes -subj /CN=127.0.0.1
+npm run init
 ```
 
-This will create `.cert/private.key` and `.cert/private.cert` for local HTTPS.
-
-### Installation
-
-```bash
-npm install
-openssl genrsa -traditional -out plugin.key
-```
+- Creates the `.cert` directory and self-signed certificate
+- Installs dependencies
+- Generates `plugin.key` for the plugin
+- Removes unnecessary files (`renovate.json`, `.gitkeep`)
 
 ### Usage
 
@@ -39,6 +38,7 @@ npm run build:dev
 
 - Starts a local HTTPS server at https://localhost:9000/
 - Watches for file changes and rebuilds automatically
+- If `manifest.prod.json` exists, it will automatically rename `manifest.json` to `manifest.dev.json` and `manifest.prod.json` to `manifest.json` before build
 
 #### Production Build
 
@@ -47,6 +47,23 @@ npm run build:prod
 ```
 
 - Outputs bundled files to the `dist` directory
+- If `manifest.prod.json` exists, it will automatically rename `manifest.json` to `manifest.dev.json` and `manifest.prod.json` to `manifest.json` before build
+
+#### Plugin Upload
+
+```bash
+npm run upload
+```
+
+- Uploads `dist/plugin.zip` to your kintone environment using `kintone-plugin-uploader`
+
+#### Remove Unnecessary Files
+
+```bash
+npm run delete-renovate-gitkeep
+```
+
+- Removes `renovate.json` and `.gitkeep` if they exist
 
 ### Directory Structure (example)
 
@@ -54,13 +71,19 @@ npm run build:prod
 src/
   appPage/
     desktop/
-      desktop.js
+      desktop.ts
       desktop.css
     mobile/
-      mobile.js
+      mobile.ts
       mobile.css
+    common/
+      components/
+      config/
+      helpers/
+      i18n/
+      types/
   configPage/
-    config.js
+    config.ts
     config.html
     config.css
   image/
@@ -91,20 +114,14 @@ scripts/
 
 ### 初期セットアップ
 
-開発を始める前に、ローカルHTTPSサーバー用の自己署名証明書を作成してください：
-
 ```bash
-mkdir .cert && openssl req -x509 -newkey rsa:4096 -keyout .cert/private.key -out .cert/private.cert -days 9999 -nodes -subj /CN=127.0.0.1
+npm run init
 ```
 
-これにより `.cert/private.key` と `.cert/private.cert` が作成されます。
-
-### インストール
-
-```bash
-npm install
-openssl genrsa -traditional -out plugin.key
-```
+- `.cert` ディレクトリと自己署名証明書を作成します
+- 依存パッケージをインストールします
+- プラグイン用の `plugin.key` を生成します
+- 不要ファイル（`renovate.json`, `.gitkeep`）を削除します
 
 ### 使い方
 
@@ -116,6 +133,7 @@ npm run build:dev
 
 - https://localhost:9000/ でローカルHTTPSサーバーが起動します
 - ファイル変更を監視し、自動で再ビルドします
+- `manifest.prod.json` が存在する場合は `manifest.json` → `manifest.dev.json`、`manifest.prod.json` → `manifest.json` に自動で切り替わります
 
 #### 本番ビルド
 
@@ -124,6 +142,23 @@ npm run build:prod
 ```
 
 - `dist` ディレクトリにバンドル済みファイルが出力されます
+- `manifest.prod.json` が存在する場合は `manifest.json` → `manifest.dev.json`、`manifest.prod.json` → `manifest.json` に自動で切り替わります
+
+#### プラグインのアップロード
+
+```bash
+npm run upload
+```
+
+- `dist/plugin.zip` を kintone 環境にアップロードします（`kintone-plugin-uploader` を利用）
+
+#### 不要ファイルの削除
+
+```bash
+npm run delete-renovate-gitkeep
+```
+
+- `renovate.json` と `.gitkeep` を削除します
 
 ### ディレクトリ構成（例）
 
@@ -131,19 +166,22 @@ npm run build:prod
 src/
   appPage/
     desktop/
-      desktop.js
+      desktop.ts
       desktop.css
     mobile/
-      mobile.js
+      mobile.ts
       mobile.css
+    common/
+      components/
+      config/
+      helpers/
+      i18n/
+      types/
   configPage/
-    config.js
+    config.ts
     config.html
     config.css
-  css/
-  html/
   image/
-  js/
 dist/
 scripts/
   esbuild/
