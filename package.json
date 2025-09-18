@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "upload": "kintone-plugin-uploader dist/plugin.zip --watch --waiting-dialog-ms 3000",
-    "build:prod": "tsc && node ./scripts/esbuild/build.mjs --mode=production && kintone-plugin-packer --ppk plugin.key --out ./dist/plugin.zip .",
-    "build:dev": "tsc && kintone-plugin-packer --ppk plugin.key --out ./dist/plugin.zip . && node ./scripts/esbuild/build.mjs --mode=development"
+  "init": "node ./scripts/init.js",
+  "upload": "node ./scripts/upload.js",
+  "build:prod": "node ./scripts/build-prod.js",
+  "build:dev": "node ./scripts/build-dev.js"
   },
   "keywords": [
     "kintone"
