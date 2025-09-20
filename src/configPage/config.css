@@ -1,3 +1,13 @@
+#plugin-config-root {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 60px;
+
+  & > * {
+    margin: 5px 5px;
+  }
+}
+
 #plugin-config-footer {
   width: 100%;
   padding: 5px;
