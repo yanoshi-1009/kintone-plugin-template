@@ -1,1 +1,8 @@
-{}
+{
+  "config": {
+    "label": {
+      "save": "Save",
+      "cancel": "Cancel"
+    }
+  }
+}

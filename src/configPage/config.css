@@ -15,4 +15,8 @@
   position: fixed;
   background-color: #efefef;
   display: flex;
+
+  & > * {
+    margin: 0 8px;
+  }
 }
