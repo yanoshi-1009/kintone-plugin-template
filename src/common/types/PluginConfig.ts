@@ -1,3 +1,3 @@
 export interface PluginConfig {
-  [key: string]: any; // Default configuration values
+  [key: string]: string;
 }
