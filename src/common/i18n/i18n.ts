@@ -1,7 +1,7 @@
 import i18next from "i18next";
-import en from "./lang/en.json";
-import ja from "./lang/ja.json";
-import zh from "./lang/zh.json";
+import { en } from "./lang/en";
+import { ja } from "./lang/ja";
+import { zh } from "./lang/zh";
 
 i18next.init({
   lng: kintone.getLoginUser().language,
