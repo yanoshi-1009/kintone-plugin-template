@@ -32,7 +32,7 @@
     "typescript": "^5.9.2"
   },
   "dependencies": {
-    "@kintone/rest-api-client": "^5.7.4",
+    "@kintone/rest-api-client": "^5.7.5",
     "dayjs": "^1.11.18",
     "i18next": "^25.5.2",
     "kintone-ui-component": "^1.22.0"
