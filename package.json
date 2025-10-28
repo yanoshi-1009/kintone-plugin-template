@@ -35,6 +35,6 @@
     "@kintone/rest-api-client": "^6.0.0",
     "dayjs": "^1.11.18",
     "i18next": "^25.6.0",
-    "kintone-ui-component": "^1.22.0"
+    "kintone-ui-component": "^1.23.0"
   }
 }
