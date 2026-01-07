@@ -23,7 +23,7 @@
   "description": "This is kintone plugin template.",
   "devDependencies": {
     "@cybozu/eslint-config": "^25.0.0",
-    "@kintone/dts-gen": "^9.0.0",
+    "@kintone/dts-gen": "^9.0.1",
     "@kintone/plugin-packer": "^9.0.0",
     "@kintone/plugin-uploader": "^10.0.0",
     "esbuild": "^0.27.2",
