@@ -17,7 +17,7 @@ if (fs.existsSync(manifestDevJson)) {
 
 try {
   execSync("tsc", { stdio: "inherit" });
-  execSync("kintone-plugin-packer --ppk plugin.key --out ./dist/plugin.zip .", {
+  execSync("cli-kintone plugin pack --input ./manifest.json --output ./dist/plugin.zip --private-key ./private.ppk", {
     stdio: "inherit"
   });
   execSync("node ./scripts/esbuild/build.mjs --mode=development", {
