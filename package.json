@@ -19,7 +19,7 @@
   "license": "MIT",
   "engines": {
     "node": "20.x || 22.x || 24.x",
-    "pnpm": ">=10.28.2"
+    "pnpm": ">=10"
   },
   "description": "This is kintone plugin template.",
   "devDependencies": {
