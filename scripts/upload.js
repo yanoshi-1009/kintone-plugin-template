@@ -2,7 +2,7 @@ const { execSync } = require("child_process");
 
 try {
   execSync(
-    "kintone-plugin-uploader dist/plugin.zip --watch --waiting-dialog-ms 3000",
+    "cli-kintone plugin upload --input ./dist/plugin.zip --watch",
     { stdio: "inherit" }
   );
 } catch (error) {

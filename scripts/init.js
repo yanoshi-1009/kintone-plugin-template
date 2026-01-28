@@ -9,7 +9,9 @@ try {
     { stdio: "inherit" }
   );
   execSync("pnpm install", { stdio: "inherit" });
-  execSync("openssl genrsa -traditional -out plugin.key", { stdio: "inherit" });
+  execSync("cli-kintone plugin keygen --output private.ppk", {
+    stdio: "inherit"
+  });
 } catch (error) {
   process.exit(error.status || 1);
 }

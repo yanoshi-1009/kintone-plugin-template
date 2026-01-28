@@ -20,7 +20,7 @@ try {
   execSync("node ./scripts/esbuild/build.mjs --mode=production", {
     stdio: "inherit"
   });
-  execSync("kintone-plugin-packer --ppk plugin.key --out ./dist/plugin.zip .", {
+  execSync("cli-kintone plugin pack --input ./manifest.json --output ./dist/plugin.zip --private-key ./private.ppk", {
     stdio: "inherit"
   });
 } catch (error) {
