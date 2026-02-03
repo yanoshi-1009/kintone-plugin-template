@@ -15,8 +15,8 @@ importers:
         specifier: ^1.11.19
         version: 1.11.19
       i18next:
-        specifier: ^25.8.0
-        version: 25.8.0(typescript@5.9.3)
+        specifier: ^25.8.1
+        version: 25.8.1(typescript@5.9.3)
       kintone-ui-component:
         specifier: ^1.23.1
         version: 1.23.1
@@ -1352,8 +1352,8 @@ packages:
     resolution: {integrity: sha512-vK9P5/iUfdl95AI+JVyUuIcVtd4ofvtrOr3HNtM2yxC9bnMbEdp3x01OhQNnjb8IJYi38VlTE3mBXwcfvywuSw==}
     engines: {node: '>= 14'}
 
-  i18next@25.8.0:
-    resolution: {integrity: sha512-urrg4HMFFMQZ2bbKRK7IZ8/CTE7D8H4JRlAwqA2ZwDRFfdd0K/4cdbNNLgfn9mo+I/h9wJu61qJzH7jCFAhUZQ==}
+  i18next@25.8.1:
+    resolution: {integrity: sha512-nFFxhwcRNggIrkv2hx/xMYVMG7Z8iMUA4ZuH4tgcbZiI0bK1jn3kSDIXNWuQDt1xVAu7mb7Qn82TpH7ZAk/okA==}
     peerDependencies:
       typescript: ^5
     peerDependenciesMeta:
@@ -3499,7 +3499,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  i18next@25.8.0(typescript@5.9.3):
+  i18next@25.8.1(typescript@5.9.3):
     dependencies:
       '@babel/runtime': 7.28.6
     optionalDependencies:
