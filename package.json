@@ -26,7 +26,7 @@
     "@cybozu/eslint-config": "^25.0.0",
     "@kintone/cli": "^1.17.0",
     "@kintone/dts-gen": "^9.0.2",
-    "esbuild": "^0.27.2",
+    "esbuild": "^0.27.3",
     "eslint": "^9.39.2",
     "prettier": "^3.8.1",
     "typescript": "^5.9.3"
