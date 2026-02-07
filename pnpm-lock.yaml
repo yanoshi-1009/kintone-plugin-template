@@ -18,8 +18,8 @@ importers:
         specifier: ^25.8.4
         version: 25.8.4(typescript@5.9.3)
       kintone-ui-component:
-        specifier: ^1.23.1
-        version: 1.23.1
+        specifier: ^1.24.0
+        version: 1.24.0
     devDependencies:
       '@cybozu/eslint-config':
         specifier: ^25.0.0
@@ -1533,8 +1533,8 @@ packages:
   keyv@4.5.4:
     resolution: {integrity: sha512-oxVHkHR/EJf2CNXnWxRLW6mg7JyCCUcG0DtEGmL2ctUo1PNTin1PUil+r/+4r5MpVgC/fn1kjsx7mjSujKqIpw==}
 
-  kintone-ui-component@1.23.1:
-    resolution: {integrity: sha512-N/43L1fFxTfVpOUqLRAaCy7WmWU8MQDHSG1p7AzI0B5J1jO/NMcM2WrHfovoUjdFimuXTIYbtDp2FZ1Kf+8UeA==}
+  kintone-ui-component@1.24.0:
+    resolution: {integrity: sha512-FZTCQc/IqGgcRlsd48xVF98kkEDQyhcQL3BFqtDORm9JKRvn1sJG2HEtcgHidRygedTsaj6ZpnAPnlqb2e8zjw==}
 
   language-subtag-registry@0.3.23:
     resolution: {integrity: sha512-0K65Lea881pHotoGEa5gDlMxt3pctLi2RplBb7Ezh4rRdLEOtgi7n4EwK9lamnUCkKBqaeKRVebTq6BAxSkpXQ==}
@@ -3678,7 +3678,7 @@ snapshots:
     dependencies:
       json-buffer: 3.0.1
 
-  kintone-ui-component@1.23.1:
+  kintone-ui-component@1.24.0:
     dependencies:
       core-js: 3.48.0
       lit: 3.3.2
