@@ -25,8 +25,8 @@ importers:
         specifier: ^25.0.0
         version: 25.0.0(@typescript-eslint/utils@8.54.0(eslint@9.39.2)(typescript@5.9.3))(eslint@9.39.2)(prettier@3.8.1)(typescript@5.9.3)
       '@kintone/cli':
-        specifier: ^1.18.0
-        version: 1.18.0
+        specifier: ^1.19.0
+        version: 1.19.0
       '@kintone/dts-gen':
         specifier: ^9.0.2
         version: 9.0.2(@typescript-eslint/utils@8.54.0(eslint@9.39.2)(typescript@5.9.3))(typescript@5.9.3)
@@ -539,8 +539,8 @@ packages:
   '@jridgewell/trace-mapping@0.3.31':
     resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
 
-  '@kintone/cli@1.18.0':
-    resolution: {integrity: sha512-GuWiaeVvUGa/gdMUwyu3B0A46MyjLe0/zUFHeBeguMXTRlAbpacqcAryUIp4bpJMOdqGc2zBn+EoF8VOr7C+QA==}
+  '@kintone/cli@1.19.0':
+    resolution: {integrity: sha512-T3ZBeRs0mBP+cx2WeH+x59YBNEN/Mns+AQk1B7/6BgOLjDY1gRebC++vlXvzO7gM3RR1HCQlNhkJO7YXVxqe+w==}
     engines: {node: '>=20'}
     hasBin: true
 
@@ -2509,7 +2509,7 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
 
-  '@kintone/cli@1.18.0':
+  '@kintone/cli@1.19.0':
     dependencies:
       '@inquirer/prompts': 7.10.1
       '@kintone/plugin-manifest-validator': 11.1.0
