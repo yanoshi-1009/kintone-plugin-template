@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@kintone/rest-api-client':
-        specifier: ^6.1.1
-        version: 6.1.1
+        specifier: ^6.1.2
+        version: 6.1.2
       dayjs:
         specifier: ^1.11.19
         version: 1.11.19
@@ -549,8 +549,8 @@ packages:
     resolution: {integrity: sha512-aw2rXb0h7HbIp8XimoYbtqXGvn/DOzdwkGbfhAReHxbs9UZ/ik3zJGxjgYcZV9j4lw9YR85rIGYWuty7KEs2gg==}
     engines: {node: '>=20'}
 
-  '@kintone/rest-api-client@6.1.1':
-    resolution: {integrity: sha512-DJ61P1YcdukPGM0iZJ3myXxfdP8jafLPS8KltLvN3h1DrnEInOqE4gYi+G09UQM6lGpeK/5PDTv1xRX2vnqtmw==}
+  '@kintone/rest-api-client@6.1.2':
+    resolution: {integrity: sha512-/6RMKD/cNg8KOfQDXLOTzKkfG+EAKuU6czgVF5b5c4Na9uFB9BENmdg7e1eV3qNwszfIt7UpONfT3apCiw2R3Q==}
     engines: {node: '>=20'}
 
   '@lit-labs/ssr-dom-shim@1.5.1':
@@ -2518,7 +2518,7 @@ snapshots:
     dependencies:
       '@inquirer/prompts': 7.10.1
       '@kintone/plugin-manifest-validator': 11.1.0
-      '@kintone/rest-api-client': 6.1.1
+      '@kintone/rest-api-client': 6.1.2
       chalk: 4.1.2
       chokidar: 4.0.3
       csv-parse: 5.6.0
@@ -2559,7 +2559,7 @@ snapshots:
       ajv-formats: 3.0.1(ajv@8.18.0)
       bytes: 3.1.2
 
-  '@kintone/rest-api-client@6.1.1':
+  '@kintone/rest-api-client@6.1.2':
     dependencies:
       axios: 1.13.5
       core-js: 3.48.0
