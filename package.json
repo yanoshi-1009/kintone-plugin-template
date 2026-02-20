@@ -24,17 +24,17 @@
   "description": "This is kintone plugin template.",
   "devDependencies": {
     "@cybozu/eslint-config": "^25.0.0",
-    "@kintone/cli": "^1.17.0",
+    "@kintone/cli": "^1.19.0",
     "@kintone/dts-gen": "^9.0.2",
-    "esbuild": "^0.27.2",
+    "esbuild": "^0.27.3",
     "eslint": "^9.39.2",
     "prettier": "^3.8.1",
     "typescript": "^5.9.3"
   },
   "dependencies": {
-    "@kintone/rest-api-client": "^6.1.1",
+    "@kintone/rest-api-client": "^6.1.2",
     "dayjs": "^1.11.19",
-    "i18next": "^25.8.0",
-    "kintone-ui-component": "^1.23.1"
+    "i18next": "^25.8.11",
+    "kintone-ui-component": "^1.24.0"
   }
 }
