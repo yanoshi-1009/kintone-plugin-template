@@ -1,6 +1,9 @@
-const { execSync } = require("child_process");
-const path = require("path");
-const fs = require("fs");
+import { execSync } from "node:child_process";
+import { existsSync, unlinkSync } from "node:fs";
+import { join, dirname } from "node:path";
+import { fileURLToPath } from "node:url";
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
 
 try {
   execSync("mkdir .cert", { stdio: "inherit" });
@@ -17,13 +20,13 @@ try {
 }
 
 const targets = [
-  path.join(__dirname, "../renovate.json"),
-  path.join(__dirname, "../.gitkeep")
+  join(__dirname, "../renovate.json"),
+  join(__dirname, "../.gitkeep")
 ];
 
 for (const file of targets) {
-  if (fs.existsSync(file)) {
-    fs.unlinkSync(file);
+  if (existsSync(file)) {
+    unlinkSync(file);
     console.log(`Deleted: ${file}`);
   } else {
     console.log(`Not found: ${file}`);

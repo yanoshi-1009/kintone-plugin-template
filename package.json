@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "init": "node ./scripts/init.js",
-    "upload": "node ./scripts/upload.js",
-    "build:prod": "node ./scripts/build-prod.js",
-    "build:dev": "node ./scripts/build-dev.js"
+    "init": "node ./scripts/init.mjs",
+    "upload": "node ./scripts/upload.mjs",
+    "build:prod": "node ./scripts/build-prod.mjs",
+    "build:dev": "node ./scripts/build-dev.mjs"
   },
   "keywords": [
     "kintone"
@@ -19,7 +19,7 @@
   "license": "MIT",
   "engines": {
     "node": "20.x || 22.x || 24.x",
-    "pnpm": "10.x"
+    "pnpm": ">=10.0.0"
   },
   "description": "This is kintone plugin template.",
   "devDependencies": {
