@@ -1,3 +1,3 @@
-import cybozuEslintConfig from "@cybozu/eslint-config/flat/presets/node-prettier.js";
+import cybozuEslintConfig from "@cybozu/eslint-config/flat/presets/node-typescript-prettier";
 
-export default [...cybozuEslintConfig, { ignore: ["node_modules", "dist"] }];
+export default [...cybozuEslintConfig, { ignores: ["node_modules", "dist"] }];
