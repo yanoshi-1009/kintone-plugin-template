@@ -1,11 +1,12 @@
 {
   "extends": [
-    "config:base",
+    "config:recommended",
     ":automergeMinor",
     ":maintainLockFilesWeekly"
   ],
   "timezone": "Asia/Tokyo",
   "schedule": "before 6am",
+  "minimumReleaseAge": "1 days",
   "labels": ["renovate"],
   "assignees": ["yanoshi-1009"],
   "rangeStrategy": "bump",
@@ -14,7 +15,7 @@
   },
   "packageRules": [
     {
-      "matchPackagePatterns": ["@cybozu/eslint-config"],
+      "matchPackageNames": ["@cybozu/eslint-config"],
       "automerge": true
     }
   ]
