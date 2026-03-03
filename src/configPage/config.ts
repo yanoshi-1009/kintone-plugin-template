@@ -6,6 +6,7 @@ import PluginFooterBuilder from "./components/PluginFooterBuilder";
 ((PLUGIN_ID: string) => {
   "use strict";
   const config = kintone.plugin.app.getConfig(PLUGIN_ID);
+  console.log("Current config: ", config);
 
   const settingFooterDiv = document.getElementById(
     ids.configFooter
