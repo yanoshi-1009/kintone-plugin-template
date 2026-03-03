@@ -12,7 +12,11 @@ import PluginFooterBuilder from "./components/PluginFooterBuilder";
   ) as HTMLDivElement;
   const footer = new PluginFooterBuilder(async () => {
     const newConfig: PluginConfig = {};
-    kintone.plugin.app.setConfig(newConfig);
+    await new Promise((resolve) => {
+      kintone.plugin.app.setConfig(newConfig, () => {
+        resolve("success");
+      });
+    });
   });
   footer.appendTo(settingFooterDiv);
 
