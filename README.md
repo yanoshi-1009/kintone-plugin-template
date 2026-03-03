@@ -10,7 +10,24 @@ This project provides a template for building kintone plugins using [esbuild](ht
 
 - Node.js (v20, v22, or v24)
 - pnpm (v10 or later)
-- OpenSSL (for generating a local development certificate)
+- [mkcert](https://github.com/FiloSottile/mkcert) (for generating a locally-trusted development certificate)
+
+**Install mkcert (one-time setup per machine):**
+
+```bash
+# macOS
+brew install mkcert
+mkcert -install
+
+# Windows (Chocolatey)
+choco install mkcert
+mkcert -install
+
+# Windows (Scoop)
+scoop bucket add extras
+scoop install mkcert
+mkcert -install
+```
 
 ### Initial Setup
 
@@ -99,7 +116,24 @@ private.ppk
 
 - Node.js（v20, v22, または v24）
 - pnpm（v10以上）
-- OpenSSL（ローカル開発用証明書の作成に必要）
+- [mkcert](https://github.com/FiloSottile/mkcert)（ブラウザに信頼されたローカル開発用証明書を生成するために必要）
+
+**mkcert のインストール（マシンごとに1回だけ実行）:**
+
+```bash
+# macOS
+brew install mkcert
+mkcert -install
+
+# Windows (Chocolatey)
+choco install mkcert
+mkcert -install
+
+# Windows (Scoop)
+scoop bucket add extras
+scoop install mkcert
+mkcert -install
+```
 
 ### 初期セットアップ
 

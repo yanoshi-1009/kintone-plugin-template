@@ -6,9 +6,9 @@ import { fileURLToPath } from "node:url";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 try {
-  execSync("mkdir .cert", { stdio: "inherit" });
+  execSync("mkdir -p .cert", { stdio: "inherit" });
   execSync(
-    "openssl req -x509 -newkey rsa:4096 -keyout .cert/private.key -out .cert/private.cert -days 9999 -nodes -subj /CN=127.0.0.1",
+    "mkcert -key-file .cert/private.key -cert-file .cert/private.cert localhost 127.0.0.1",
     { stdio: "inherit" }
   );
   execSync("pnpm install", { stdio: "inherit" });
