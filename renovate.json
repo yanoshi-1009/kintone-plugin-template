@@ -2,7 +2,8 @@
   "extends": [
     "config:recommended",
     ":automergeMinor",
-    ":maintainLockFilesWeekly"
+    ":maintainLockFilesWeekly",
+    ":skipStatusChecks"
   ],
   "timezone": "Asia/Tokyo",
   "schedule": "before 6am",
