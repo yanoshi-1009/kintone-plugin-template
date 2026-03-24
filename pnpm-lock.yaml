@@ -15,7 +15,7 @@ importers:
         specifier: ^1.11.20
         version: 1.11.20
       i18next:
-        specifier: ^25.10.4
+        specifier: ^25.10.5
         version: 25.10.5(typescript@5.9.3)
       kintone-ui-component:
         specifier: ^1.24.0
