@@ -23,8 +23,8 @@
   },
   "description": "This is kintone plugin template.",
   "devDependencies": {
+    "@kintone/cli": "^1.19.1",
     "@cybozu/eslint-config": "^25.0.1",
-    "@kintone/cli": "^1.19.0",
     "@kintone/dts-gen": "^9.0.2",
     "esbuild": "^0.27.4",
     "eslint": "^9.39.4",
