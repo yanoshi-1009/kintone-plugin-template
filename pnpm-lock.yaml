@@ -25,8 +25,8 @@ importers:
         specifier: ^25.0.0
         version: 25.0.0(@typescript-eslint/utils@8.55.0(eslint@9.39.2)(typescript@5.9.3))(eslint@9.39.2)(prettier@3.8.1)(typescript@5.9.3)
       '@kintone/cli':
-        specifier: ^1.19.0
-        version: 1.19.0
+        specifier: ^1.19.1
+        version: 1.19.1
       '@kintone/dts-gen':
         specifier: ^9.0.2
         version: 9.0.2(@typescript-eslint/utils@8.55.0(eslint@9.39.2)(typescript@5.9.3))(typescript@5.9.3)
@@ -535,8 +535,8 @@ packages:
   '@jridgewell/trace-mapping@0.3.31':
     resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
 
-  '@kintone/cli@1.19.0':
-    resolution: {integrity: sha512-T3ZBeRs0mBP+cx2WeH+x59YBNEN/Mns+AQk1B7/6BgOLjDY1gRebC++vlXvzO7gM3RR1HCQlNhkJO7YXVxqe+w==}
+  '@kintone/cli@1.19.1':
+    resolution: {integrity: sha512-1GUPHfl58NKhuyqcmfOVRsbHtdHZwmjAWDv6eGxkn/mzU5SCkd3AyyWjr3ek0x6A0A48VyZ3N5B6y5THHCASDQ==}
     engines: {node: '>=20'}
     hasBin: true
 
@@ -1902,10 +1902,9 @@ packages:
     resolution: {integrity: sha512-g9ljZiwki/LfxmQADO3dEY1CbpmXT5Hm2fJ+QaGKwSXUylMybePR7/67YW7jOrrvjEgL1Fmz5kzyAjWVWLlucg==}
     engines: {node: '>=6'}
 
-  tar@7.5.7:
-    resolution: {integrity: sha512-fov56fJiRuThVFXD6o6/Q354S7pnWMJIVlDBYijsTNx6jKSE4pvrDTs6lUnmGvNyfJwFQQwWy3owKz1ucIhveQ==}
+  tar@7.5.13:
+    resolution: {integrity: sha512-tOG/7GyXpFevhXVh8jOPJrmtRpOTsYqUIkVdVooZYJS/z8WhfQUX8RJILmeuJNinGAMSu1veBr4asSHFt5/hng==}
     engines: {node: '>=18'}
-    deprecated: Old versions of tar are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
 
   tinyglobby@0.2.15:
     resolution: {integrity: sha512-j2Zq4NyQYG5XMST4cbs02Ak8iJUdxRM0XI5QyxXuZOzKOINmWurp3smXu3y5wDcJrptwpSjgXHzIQxR0omXljQ==}
@@ -2514,7 +2513,7 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
 
-  '@kintone/cli@1.19.0':
+  '@kintone/cli@1.19.1':
     dependencies:
       '@inquirer/prompts': 7.10.1
       '@kintone/plugin-manifest-validator': 11.1.0
@@ -2526,7 +2525,7 @@ snapshots:
       https-proxy-agent: 7.0.6
       iconv-lite: 0.7.2
       node-rsa: 1.1.1
-      tar: 7.5.7
+      tar: 7.5.13
       yargs: 17.7.2
       yauzl: 3.2.0
       yazl: 3.3.1
@@ -4091,7 +4090,7 @@ snapshots:
 
   tapable@2.3.0: {}
 
-  tar@7.5.7:
+  tar@7.5.13:
     dependencies:
       '@isaacs/fs-minipass': 4.0.1
       chownr: 3.0.0
