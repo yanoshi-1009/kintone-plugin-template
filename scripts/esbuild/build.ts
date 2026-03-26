@@ -1,10 +1,8 @@
 import * as esbuild from "esbuild";
 import { parseArgs } from "node:util";
-import serveModePlugin from "./plugins/serve-mode-plugin.mjs";
+import serveModePlugin from "./plugins/serve-mode-plugin.ts";
 
-const {
-  values: { mode }
-} = parseArgs({
+const mode = parseArgs({
   options: {
     mode: {
       type: "string",
@@ -12,7 +10,7 @@ const {
     }
   },
   allowPositionals: false
-});
+}).values.mode as string;
 
 if (!["production", "development"].includes(mode)) {
   console.error(
@@ -38,7 +36,7 @@ const context = await esbuild.context({
   plugins: [serveModePlugin]
 });
 
-const runServeMode = async () => {
+const runServeMode = async (): Promise<void> => {
   try {
     await context.rebuild();
     const serveResult = await context.serve({
@@ -60,7 +58,7 @@ const runServeMode = async () => {
   }
 };
 
-const runProductionBuild = async () => {
+const runProductionBuild = async (): Promise<void> => {
   try {
     await context.rebuild();
     console.log("\x1b[32mProduction build completed successfully.\x1b[0m");

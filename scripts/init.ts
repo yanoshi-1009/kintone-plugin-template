@@ -16,7 +16,7 @@ try {
     stdio: "inherit"
   });
 } catch (error) {
-  process.exit(error.status || 1);
+  process.exit((error as { status?: number | null }).status ?? 1);
 }
 
 const targets = [

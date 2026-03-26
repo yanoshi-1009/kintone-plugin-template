@@ -1,7 +1,9 @@
-export default {
+import type { Plugin, PluginBuild } from "esbuild";
+
+const serveModePlugin: Plugin = {
   name: "serve-mode-plugin",
-  setup(build) {
-    let startTime = null;
+  setup(build: PluginBuild) {
+    let startTime: Date | null = null;
     build.onStart(() => {
       startTime = new Date();
       console.log("------");
@@ -9,7 +11,8 @@ export default {
     });
     build.onEnd(() => {
       const endTime = new Date();
-      const duration = (endTime - startTime) / 1000;
+      const duration =
+        (endTime.getTime() - (startTime as Date).getTime()) / 1000;
       console.log(
         `${endTime.toLocaleString()} Build finished in ${duration} seconds`
       );
@@ -17,3 +20,5 @@ export default {
     });
   }
 };
+
+export default serveModePlugin;
