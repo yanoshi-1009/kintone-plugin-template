@@ -10,13 +10,13 @@
   "minimumReleaseAge": "1 days",
   "labels": ["renovate"],
   "assignees": ["yanoshi-1009"],
-  "rangeStrategy": "bump",
+  "rangeStrategy": "pin",
   "lockFileMaintenance": {
     "automerge": true
   },
   "packageRules": [
     {
-      "matchPackageNames": ["@cybozu/eslint-config"],
+      "matchPackageNames": ["@cybozu/eslint-config", "typescript"],
       "automerge": true
     },
     {
