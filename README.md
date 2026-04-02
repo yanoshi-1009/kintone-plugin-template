@@ -6,9 +6,20 @@
 
 This project provides a template for building kintone plugins using [esbuild](https://esbuild.github.io/) and modern frontend tools. You can easily build, bundle, and serve your JavaScript/CSS for kintone plugin development.
 
+### Key tools & libraries included
+
+- **Build**: [esbuild](https://esbuild.github.io/)
+- **kintone API client**: [@kintone/rest-api-client](https://github.com/kintone/js-sdk/tree/main/packages/rest-api-client)
+- **kintone UI**: [kintone-ui-component](https://kintone-ui-component.netlify.app/)
+- **Internationalization**: [i18next](https://www.i18next.com/)
+- **Date utility**: [dayjs](https://day.js.org/)
+- **Linter**: [eslint](https://eslint.org/) + [@cybozu/eslint-config](https://github.com/cybozu/eslint-config)
+- **Formatter**: [prettier](https://prettier.io/)
+- **Type checking**: [TypeScript](https://www.typescriptlang.org/)
+
 ### Prerequisites
 
-- Node.js (v20, v22, or v24)
+- Node.js (v24 or later)
 - pnpm (v10 or later)
 - [mkcert](https://github.com/FiloSottile/mkcert) (for generating a locally-trusted development certificate)
 
@@ -81,12 +92,12 @@ src/
     mobile/
       mobile.ts
       mobile.css
-    common/
-      components/
-      config/
-      helpers/
-      i18n/
-      types/
+  common/
+    components/
+    config/
+    helpers/
+    i18n/
+    types/
   configPage/
     config.ts
     config.html
@@ -95,9 +106,12 @@ src/
 dist/
 scripts/
   esbuild/
-    build.mjs
+    build.ts
     plugins/
-      serve-mode-plugin.mjs
+  init.ts
+  build-dev.ts
+  build-prod.ts
+  upload.ts
 .cert/
   private.key
   private.cert
@@ -112,9 +126,20 @@ private.ppk
 
 このプロジェクトは、[esbuild](https://esbuild.github.io/) とモダンなフロントエンドツールを使った kintone プラグイン開発用のテンプレートです。JavaScript/CSS のビルド・バンドル・サーブを簡単に行えます。
 
+### 含まれる主なツール・ライブラリ
+
+- **ビルド**: [esbuild](https://esbuild.github.io/)
+- **kintone API クライアント**: [@kintone/rest-api-client](https://github.com/kintone/js-sdk/tree/main/packages/rest-api-client)
+- **kintone UI**: [kintone-ui-component](https://kintone-ui-component.netlify.app/)
+- **多言語対応**: [i18next](https://www.i18next.com/)
+- **日付ユーティリティ**: [dayjs](https://day.js.org/)
+- **リンター**: [eslint](https://eslint.org/) + [@cybozu/eslint-config](https://github.com/cybozu/eslint-config)
+- **フォーマッター**: [prettier](https://prettier.io/)
+- **型チェック**: [TypeScript](https://www.typescriptlang.org/)
+
 ### 前提条件
 
-- Node.js（v20, v22, または v24）
+- Node.js（v24以上）
 - pnpm（v10以上）
 - [mkcert](https://github.com/FiloSottile/mkcert)（ブラウザに信頼されたローカル開発用証明書を生成するために必要）
 
@@ -187,12 +212,12 @@ src/
     mobile/
       mobile.ts
       mobile.css
-    common/
-      components/
-      config/
-      helpers/
-      i18n/
-      types/
+  common/
+    components/
+    config/
+    helpers/
+    i18n/
+    types/
   configPage/
     config.ts
     config.html
@@ -201,9 +226,12 @@ src/
 dist/
 scripts/
   esbuild/
-    build.mjs
+    build.ts
     plugins/
-      serve-mode-plugin.mjs
+  init.ts
+  build-dev.ts
+  build-prod.ts
+  upload.ts
 .cert/
   private.key
   private.cert
