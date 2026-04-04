@@ -42,7 +42,7 @@
     "@kintone/cli": "1.19.2",
     "@kintone/dts-gen": "9.0.3",
     "@types/node": "25.5.2",
-    "esbuild": "0.27.7",
+    "esbuild": "0.28.0",
     "eslint": "9.39.4",
     "prettier": "3.8.1",
     "typescript": "6.0.2"
