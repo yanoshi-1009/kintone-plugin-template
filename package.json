@@ -40,7 +40,7 @@
   "devDependencies": {
     "@cybozu/eslint-config": "25.0.1",
     "@kintone/cli": "1.19.2",
-    "@kintone/dts-gen": "9.0.3",
+    "@kintone/dts-gen": "9.0.4",
     "@types/node": "25.5.2",
     "esbuild": "0.28.0",
     "eslint": "9.39.4",
