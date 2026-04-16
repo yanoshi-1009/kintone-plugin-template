@@ -28,8 +28,8 @@ importers:
         specifier: 1.19.2
         version: 1.19.2(@types/node@25.6.0)
       '@kintone/dts-gen':
-        specifier: 9.0.4
-        version: 9.0.4(@typescript-eslint/utils@8.58.1(eslint@9.39.4)(typescript@6.0.2))(typescript@6.0.2)
+        specifier: 9.0.5
+        version: 9.0.5(@typescript-eslint/utils@8.58.1(eslint@9.39.4)(typescript@6.0.2))(typescript@6.0.2)
       '@types/node':
         specifier: 25.6.0
         version: 25.6.0
@@ -535,8 +535,8 @@ packages:
     engines: {node: '>=20'}
     hasBin: true
 
-  '@kintone/dts-gen@9.0.4':
-    resolution: {integrity: sha512-uS7cc+rDGlmjAldHpWz5/c4kpjxetLEiKFB/e5V6NhIxsKupLCUvvR45ew6SrAjEtrdbPlSr5Hb5omoz7zwrUA==}
+  '@kintone/dts-gen@9.0.5':
+    resolution: {integrity: sha512-l/62QKlYp3uJi2PeQx3srGERPN4fc137nPXJfbuPMib8lOvqQBIQe5Y5zXAi+5oVbfjYV8HVUqyYkyJAdSvG2g==}
     engines: {node: '>=20'}
     hasBin: true
 
@@ -845,6 +845,9 @@ packages:
 
   axios@1.14.0:
     resolution: {integrity: sha512-3Y8yrqLSwjuzpXuZ0oIYZ/XGgLwUIBU3uLvbcpb0pidD9ctpShJd43KSlEEkVQg6DS0G9NKyzOvBfUtDKEyHvQ==}
+
+  axios@1.15.0:
+    resolution: {integrity: sha512-wWyJDlAatxk30ZJer+GeCWS209sA42X+N5jU2jy6oHTp7ufw8uzUTVFBX9+wTfAlhiJXGS0Bq7X6efruWjuK9Q==}
 
   axobject-query@4.1.0:
     resolution: {integrity: sha512-qIj0G9wZbMGNLjLmg1PT6v2mE9AH2zlnADJD/2tC6E00hgmhUOfEB6greHPAfLRSufHqROIUTkw6E+M3lH0PTQ==}
@@ -2577,10 +2580,10 @@ snapshots:
       - debug
       - supports-color
 
-  '@kintone/dts-gen@9.0.4(@typescript-eslint/utils@8.58.1(eslint@9.39.4)(typescript@6.0.2))(typescript@6.0.2)':
+  '@kintone/dts-gen@9.0.5(@typescript-eslint/utils@8.58.1(eslint@9.39.4)(typescript@6.0.2))(typescript@6.0.2)':
     dependencies:
       '@cybozu/eslint-config': 24.3.0(@typescript-eslint/utils@8.58.1(eslint@9.39.4)(typescript@6.0.2))(eslint@9.39.4)(prettier@3.8.1)(typescript@6.0.2)
-      axios: 1.14.0
+      axios: 1.15.0
       commander: 12.1.0
       eslint: 9.39.4
       form-data: 4.0.5
@@ -2924,6 +2927,14 @@ snapshots:
   axe-core@4.11.2: {}
 
   axios@1.14.0:
+    dependencies:
+      follow-redirects: 1.15.11
+      form-data: 4.0.5
+      proxy-from-env: 2.1.0
+    transitivePeerDependencies:
+      - debug
+
+  axios@1.15.0:
     dependencies:
       follow-redirects: 1.15.11
       form-data: 4.0.5
