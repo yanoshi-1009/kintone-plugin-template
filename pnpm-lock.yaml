@@ -23,7 +23,7 @@ importers:
     devDependencies:
       '@cybozu/eslint-config':
         specifier: 25.0.1
-        version: 25.0.1(@typescript-eslint/utils@8.58.1(eslint@9.39.4)(typescript@6.0.2))(eslint@9.39.4)(prettier@3.8.2)(typescript@6.0.2)
+        version: 25.0.1(@typescript-eslint/utils@8.58.1(eslint@9.39.4)(typescript@6.0.2))(eslint@9.39.4)(prettier@3.8.3)(typescript@6.0.2)
       '@kintone/cli':
         specifier: 1.19.2
         version: 1.19.2(@types/node@25.6.0)
@@ -40,8 +40,8 @@ importers:
         specifier: 9.39.4
         version: 9.39.4
       prettier:
-        specifier: 3.8.2
-        version: 3.8.2
+        specifier: 3.8.3
+        version: 3.8.3
       typescript:
         specifier: 6.0.2
         version: 6.0.2
@@ -1737,8 +1737,8 @@ packages:
     engines: {node: '>=14'}
     hasBin: true
 
-  prettier@3.8.2:
-    resolution: {integrity: sha512-8c3mgTe0ASwWAJK+78dpviD+A8EqhndQPUBpNUIPt6+xWlIigCwfN01lWr9MAede4uqXGTEKeQWTvzb3vjia0Q==}
+  prettier@3.8.3:
+    resolution: {integrity: sha512-7igPTM53cGHMW8xWuVTydi2KO233VFiTNyF5hLJqpilHfmn8C8gPf+PS7dUT64YcXFbiMGZxS9pCSxL/Dxm/Jw==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -2205,7 +2205,7 @@ snapshots:
       - prettier
       - supports-color
 
-  '@cybozu/eslint-config@25.0.1(@typescript-eslint/utils@8.58.1(eslint@9.39.4)(typescript@6.0.2))(eslint@9.39.4)(prettier@3.8.2)(typescript@6.0.2)':
+  '@cybozu/eslint-config@25.0.1(@typescript-eslint/utils@8.58.1(eslint@9.39.4)(typescript@6.0.2))(eslint@9.39.4)(prettier@3.8.3)(typescript@6.0.2)':
     dependencies:
       '@eslint/css': 0.14.1
       '@eslint/js': 9.39.4
@@ -2217,7 +2217,7 @@ snapshots:
       eslint-plugin-import-x: 4.16.2(@typescript-eslint/utils@8.58.1(eslint@9.39.4)(typescript@6.0.2))(eslint@9.39.4)
       eslint-plugin-jsx-a11y: 6.10.2(eslint@9.39.4)
       eslint-plugin-n: 17.24.0(eslint@9.39.4)(typescript@6.0.2)
-      eslint-plugin-prettier: 5.5.5(eslint-config-prettier@10.1.8(eslint@9.39.4))(eslint@9.39.4)(prettier@3.8.2)
+      eslint-plugin-prettier: 5.5.5(eslint-config-prettier@10.1.8(eslint@9.39.4))(eslint@9.39.4)(prettier@3.8.3)
       eslint-plugin-react: 7.37.5(eslint@9.39.4)
       eslint-plugin-react-hooks: 7.0.1(eslint@9.39.4)
       globals: 17.5.0
@@ -3326,10 +3326,10 @@ snapshots:
     optionalDependencies:
       eslint-config-prettier: 10.1.8(eslint@9.39.4)
 
-  eslint-plugin-prettier@5.5.5(eslint-config-prettier@10.1.8(eslint@9.39.4))(eslint@9.39.4)(prettier@3.8.2):
+  eslint-plugin-prettier@5.5.5(eslint-config-prettier@10.1.8(eslint@9.39.4))(eslint@9.39.4)(prettier@3.8.3):
     dependencies:
       eslint: 9.39.4
-      prettier: 3.8.2
+      prettier: 3.8.3
       prettier-linter-helpers: 1.0.1
       synckit: 0.11.12
     optionalDependencies:
@@ -3949,7 +3949,7 @@ snapshots:
 
   prettier@3.8.1: {}
 
-  prettier@3.8.2: {}
+  prettier@3.8.3: {}
 
   prop-types@15.8.1:
     dependencies:
