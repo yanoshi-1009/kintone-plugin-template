@@ -18,8 +18,8 @@ importers:
         specifier: 26.1.0
         version: 26.1.0(typescript@6.0.3)
       kintone-ui-component:
-        specifier: 1.24.0
-        version: 1.24.0
+        specifier: 1.25.0
+        version: 1.25.0
     devDependencies:
       '@cybozu/eslint-config':
         specifier: 25.0.1
@@ -1551,8 +1551,9 @@ packages:
   keyv@4.5.4:
     resolution: {integrity: sha512-oxVHkHR/EJf2CNXnWxRLW6mg7JyCCUcG0DtEGmL2ctUo1PNTin1PUil+r/+4r5MpVgC/fn1kjsx7mjSujKqIpw==}
 
-  kintone-ui-component@1.24.0:
-    resolution: {integrity: sha512-FZTCQc/IqGgcRlsd48xVF98kkEDQyhcQL3BFqtDORm9JKRvn1sJG2HEtcgHidRygedTsaj6ZpnAPnlqb2e8zjw==}
+  kintone-ui-component@1.25.0:
+    resolution: {integrity: sha512-dZblzq3zypoGYUXBTMJ3b3J0FkPYb45vqQCDx5RxcR/jpZznHo6t0+RUQVV+Mn8T6jjBjq6Bt6pBFQ+0NNxxYg==}
+    engines: {node: '>=24.14.1'}
 
   language-subtag-registry@0.3.23:
     resolution: {integrity: sha512-0K65Lea881pHotoGEa5gDlMxt3pctLi2RplBb7Ezh4rRdLEOtgi7n4EwK9lamnUCkKBqaeKRVebTq6BAxSkpXQ==}
@@ -1992,8 +1993,8 @@ packages:
   uri-js@4.4.1:
     resolution: {integrity: sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==}
 
-  uuid@13.0.2:
-    resolution: {integrity: sha512-vzi9uRZ926x4XV73S/4qQaTwPXM2JBj6/6lI/byHH1jOpCzb0zDbfytgA9LcN/hzb2l7WQSQnxITOVx5un/wGw==}
+  uuid@14.0.0:
+    resolution: {integrity: sha512-Qo+uWgilfSmAhXCMav1uYFynlQO7fMFiMVZsQqZRMIXp0O7rR7qjkj+cPvBHLgBqi960QCoo/PH2/6ZtVqKvrg==}
     hasBin: true
 
   which-boxed-primitive@1.1.1:
@@ -3765,11 +3766,11 @@ snapshots:
     dependencies:
       json-buffer: 3.0.1
 
-  kintone-ui-component@1.24.0:
+  kintone-ui-component@1.25.0:
     dependencies:
       core-js: 3.49.0
       lit: 3.3.2
-      uuid: 13.0.2
+      uuid: 14.0.0
 
   language-subtag-registry@0.3.23: {}
 
@@ -4287,7 +4288,7 @@ snapshots:
     dependencies:
       punycode: 2.3.1
 
-  uuid@13.0.2: {}
+  uuid@14.0.0: {}
 
   which-boxed-primitive@1.1.1:
     dependencies:
