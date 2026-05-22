@@ -32,7 +32,7 @@
     "build:dev": "node ./scripts/build-dev.ts"
   },
   "dependencies": {
-    "@kintone/rest-api-client": "6.1.7",
+    "@kintone/rest-api-client": "6.2.0",
     "dayjs": "1.11.20",
     "i18next": "26.2.0",
     "kintone-ui-component": "1.25.0"
