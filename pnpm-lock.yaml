@@ -224,8 +224,8 @@ importers:
         specifier: 25.0.1
         version: 25.0.1(@typescript-eslint/utils@8.59.4(eslint@9.39.4)(typescript@6.0.3))(eslint@9.39.4)(prettier@3.8.3)(typescript@6.0.3)
       '@kintone/cli':
-        specifier: 1.19.2
-        version: 1.19.2(@types/node@25.9.1)
+        specifier: 1.19.3
+        version: 1.19.3(@types/node@25.9.1)
       '@kintone/dts-gen':
         specifier: 9.0.6
         version: 9.0.6(@typescript-eslint/utils@8.59.4(eslint@9.39.4)(typescript@6.0.3))(typescript@6.0.3)
@@ -729,8 +729,8 @@ packages:
   '@jridgewell/trace-mapping@0.3.31':
     resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
 
-  '@kintone/cli@1.19.2':
-    resolution: {integrity: sha512-M5BwICU8JqXjMoSeGXJTu1TPiBEa2e0Yuipy9vn+8x/seGiuFGIzhfgbeszwBLPAaQA79b05QgIiXIdRFhTvGg==}
+  '@kintone/cli@1.19.3':
+    resolution: {integrity: sha512-gKy944KNoNKq3mst+yOzS2QUBEZIRsCq/nx5PgEcwdjfC+WtOIx6kfpTTvig7eOMmpuoY6d1ubimLbDSHVlrWQ==}
     engines: {node: '>=20'}
     hasBin: true
 
@@ -739,12 +739,8 @@ packages:
     engines: {node: '>=20'}
     hasBin: true
 
-  '@kintone/plugin-manifest-validator@11.2.0':
-    resolution: {integrity: sha512-eQYVM+RzZwpObmUmWz5xVOuAwu9acn6DINk9ij6C7ES0NeRuPtqOACutwFeL8rn2WbNn9N3WYHVzrYeFNdC0Lg==}
-    engines: {node: '>=20'}
-
-  '@kintone/rest-api-client@6.1.4':
-    resolution: {integrity: sha512-L3E7zcJW4EWnBWHJqo9xr4S6NrxNJsAvjiTr1zWzT+6wfiHe14sTIfW4kO46XGPigu81pLUcKGyKydG9/tQZZg==}
+  '@kintone/plugin-manifest-validator@11.1.1':
+    resolution: {integrity: sha512-ucGgZtgNSFg3cRSpd4ddM5D9AJYMVCa+GWxTzoSbmP+wDxW8n7l8w6kDW5FW9rWMPNeiMx9Idm7nXf0AE6f+qw==}
     engines: {node: '>=20'}
 
   '@kintone/rest-api-client@6.2.0':
@@ -1045,9 +1041,6 @@ packages:
     resolution: {integrity: sha512-BNoCY6SXXPQ7gF2opIP4GBE+Xw7U+pHMYKuzjgCN3GwiaIR09UUeKfheyIry77QtrCBlC0KK0q5/TER/tYh3PQ==}
     engines: {node: '>= 0.4'}
 
-  asn1@0.2.6:
-    resolution: {integrity: sha512-ix/FxPn0MDjeyJ7i/yoHGFt/EX6LyNbxSEhPPXODPL+KB0VPk86UYfL0lMdy+KCnv+fmvIzySwaK5COwqVbWTQ==}
-
   ast-types-flow@0.0.8:
     resolution: {integrity: sha512-OH/2E5Fg20h2aPrbe+QL8JZQFko0YZaF+j4mnQ7BGhfavO7OpSLa8a0y9sBwomHdSbkhTS8TQNayBfnW5DwbvQ==}
 
@@ -1065,9 +1058,6 @@ packages:
   axe-core@4.11.4:
     resolution: {integrity: sha512-KunSNx+TVpkAw/6ULfhnx+HWRecjqZGTOyquAoWHYLRSdK1tB5Ihce1ZW+UY3fj33bYAFWPu7W/GRSmmrCGuxA==}
     engines: {node: '>=4'}
-
-  axios@1.14.0:
-    resolution: {integrity: sha512-3Y8yrqLSwjuzpXuZ0oIYZ/XGgLwUIBU3uLvbcpb0pidD9ctpShJd43KSlEEkVQg6DS0G9NKyzOvBfUtDKEyHvQ==}
 
   axios@1.16.1:
     resolution: {integrity: sha512-caYkukvroVPO8KrzuJEb50Hm07KwfBZPEC3VeFHTsqWHvKTsy54hjJz9BS/cdaypROE2rH6xvm9mHX4fgWkr3A==}
@@ -1877,9 +1867,6 @@ packages:
     resolution: {integrity: sha512-GYVXHE2KnrzAfsAjl4uP++evGFCrAU1jta4ubEjIG7YWt/64Gqv66a30yKwWczVjA6j3bM4nBwH7Pk1JmDHaxQ==}
     engines: {node: '>=18'}
 
-  node-rsa@1.1.1:
-    resolution: {integrity: sha512-Jd4cvbJMryN21r5HgxQOpMEqv+ooke/korixNNK3mGqfGJmy0M77WDDzo/05969+OkMy3XW1UuZsSmW9KQm7Fw==}
-
   object-assign@4.1.1:
     resolution: {integrity: sha512-rJgTQnkUnH1sFw8yT6VSU3zD3sWmu6sZhIseY8VX+GRu3P6F7Fu+JNDoXfklElbLJSnc3FUQHVe4cU5hj+BcUg==}
     engines: {node: '>=0.10.0'}
@@ -1979,10 +1966,6 @@ packages:
 
   qs@6.15.1:
     resolution: {integrity: sha512-6YHEFRL9mfgcAvql/XhwTvf5jKcOiiupt2FiJxHkiX1z4j7WL8J/jRHYLluORvc1XxB5rV20KoeK00gVJamspg==}
-    engines: {node: '>=0.6'}
-
-  qs@6.15.2:
-    resolution: {integrity: sha512-Rzq0KEyX/w/tEybncDgdkZrJgVUsUMk3xjh3t5bv3S1HTAtg+uOYt72+ZfwiQwKdysThkTBdL/rTi6HDmX9Ddw==}
     engines: {node: '>=0.6'}
 
   react-is@16.13.1:
@@ -2276,8 +2259,8 @@ packages:
     resolution: {integrity: sha512-7dSzzRQ++CKnNI/krKnYRV7JKKPUXMEh61soaHKg9mrWEhzFWhFnxPxGl+69cD1Ou63C13NUPCnmIcrvqCuM6w==}
     engines: {node: '>=12'}
 
-  yauzl@3.3.1:
-    resolution: {integrity: sha512-RNPCUkiE/ZgO4w8i9U5yDQVHaFDdnzaFANElRvpJteCspvmv2VqrRb9lvS6odVD+jqI/zDsxAHJVsafpcheVQQ==}
+  yauzl@3.2.1:
+    resolution: {integrity: sha512-k1isifdbpNSFEHFJ1ZY4YDewv0IH9FR61lDetaRMD3j2ae3bIXGV+7c+LHCqtQGofSd8PIyV4X6+dHMAnSr60A==}
     engines: {node: '>=12'}
 
   yazl@3.3.1:
@@ -2786,21 +2769,20 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
 
-  '@kintone/cli@1.19.2(@types/node@25.9.1)':
+  '@kintone/cli@1.19.3(@types/node@25.9.1)':
     dependencies:
       '@inquirer/prompts': 7.10.1(@types/node@25.9.1)
-      '@kintone/plugin-manifest-validator': 11.2.0
-      '@kintone/rest-api-client': 6.1.4
+      '@kintone/plugin-manifest-validator': 11.1.1
+      '@kintone/rest-api-client': 6.2.0
       chalk: 4.1.2
       chokidar: 4.0.3
       csv-parse: 5.6.0
       csv-stringify: 6.5.2
       https-proxy-agent: 7.0.6
       iconv-lite: 0.7.2
-      node-rsa: 1.1.1
       tar: 7.5.15
       yargs: 17.7.2
-      yauzl: 3.3.1
+      yauzl: 3.2.1
       yazl: 3.3.1
     transitivePeerDependencies:
       - '@types/node'
@@ -2825,22 +2807,11 @@ snapshots:
       - supports-color
       - typescript
 
-  '@kintone/plugin-manifest-validator@11.2.0':
+  '@kintone/plugin-manifest-validator@11.1.1':
     dependencies:
       ajv: 8.18.0
       ajv-formats: 3.0.1(ajv@8.18.0)
       bytes: 3.1.2
-
-  '@kintone/rest-api-client@6.1.4':
-    dependencies:
-      axios: 1.14.0
-      core-js: 3.49.0
-      form-data: 4.0.5
-      js-base64: 3.7.8
-      mime: 3.0.0
-      qs: 6.15.2
-    transitivePeerDependencies:
-      - debug
 
   '@kintone/rest-api-client@6.2.0':
     dependencies:
@@ -3155,10 +3126,6 @@ snapshots:
       get-intrinsic: 1.3.0
       is-array-buffer: 3.0.5
 
-  asn1@0.2.6:
-    dependencies:
-      safer-buffer: 2.1.2
-
   ast-types-flow@0.0.8: {}
 
   async-function@1.0.0: {}
@@ -3170,14 +3137,6 @@ snapshots:
       possible-typed-array-names: 1.1.0
 
   axe-core@4.11.4: {}
-
-  axios@1.14.0:
-    dependencies:
-      follow-redirects: 1.16.0
-      form-data: 4.0.5
-      proxy-from-env: 2.1.0
-    transitivePeerDependencies:
-      - debug
 
   axios@1.16.1:
     dependencies:
@@ -4103,10 +4062,6 @@ snapshots:
 
   node-releases@2.0.46: {}
 
-  node-rsa@1.1.1:
-    dependencies:
-      asn1: 0.2.6
-
   object-assign@4.1.1: {}
 
   object-inspect@1.13.4: {}
@@ -4203,10 +4158,6 @@ snapshots:
   punycode@2.3.1: {}
 
   qs@6.15.1:
-    dependencies:
-      side-channel: 1.1.0
-
-  qs@6.15.2:
     dependencies:
       side-channel: 1.1.0
 
@@ -4617,7 +4568,7 @@ snapshots:
       y18n: 5.0.8
       yargs-parser: 21.1.1
 
-  yauzl@3.3.1:
+  yauzl@3.2.1:
     dependencies:
       buffer-crc32: 0.2.13
       pend: 1.2.0
