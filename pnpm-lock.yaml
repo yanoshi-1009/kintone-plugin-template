@@ -227,8 +227,8 @@ importers:
         specifier: 1.19.3
         version: 1.19.3(@types/node@25.9.1)
       '@kintone/dts-gen':
-        specifier: 9.0.6
-        version: 9.0.6(@typescript-eslint/utils@8.60.0(eslint@9.39.4)(typescript@6.0.3))(typescript@6.0.3)
+        specifier: 9.0.7
+        version: 9.0.7(@typescript-eslint/utils@8.60.0(eslint@9.39.4)(typescript@6.0.3))(typescript@6.0.3)
       '@types/node':
         specifier: 25.9.1
         version: 25.9.1
@@ -734,8 +734,8 @@ packages:
     engines: {node: '>=20'}
     hasBin: true
 
-  '@kintone/dts-gen@9.0.6':
-    resolution: {integrity: sha512-nqoHXiK38cT1Cvfgd3Y9HCnJgoFl42uFTRiRc6tF0ynwP7e7n38usV/UM01t/M9GK87WDrtG3RzW03n/rZvpdA==}
+  '@kintone/dts-gen@9.0.7':
+    resolution: {integrity: sha512-8SV0C6XcUV0DREdX2SNAP9wkuHhKbAPT33dgLgGT0QPOGSSdYsoil37Ez8Ik73zL4PbXubPCWpA+lpPjECvwBw==}
     engines: {node: '>=20'}
     hasBin: true
 
@@ -1799,8 +1799,8 @@ packages:
   lodash.merge@4.6.2:
     resolution: {integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==}
 
-  lodash@4.17.23:
-    resolution: {integrity: sha512-LgVTMpQtIopCi79SJeDiP0TfWi5CNEc/L/aRdTh3yIvmZXTnheWpKjSZhnvMl8iXbC1tFg9gdHHDMLoV7CnG+w==}
+  lodash@4.18.1:
+    resolution: {integrity: sha512-dMInicTPVE8d1e5otfwmmjlxkZoUpiVLwyeTdUsi/Caj/gfzzblBcCE5sRHV/AsjuCmxWrte2TNGSYuCeCq+0Q==}
 
   loose-envify@1.4.0:
     resolution: {integrity: sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==}
@@ -2789,14 +2789,14 @@ snapshots:
       - debug
       - supports-color
 
-  '@kintone/dts-gen@9.0.6(@typescript-eslint/utils@8.60.0(eslint@9.39.4)(typescript@6.0.3))(typescript@6.0.3)':
+  '@kintone/dts-gen@9.0.7(@typescript-eslint/utils@8.60.0(eslint@9.39.4)(typescript@6.0.3))(typescript@6.0.3)':
     dependencies:
       '@cybozu/eslint-config': 24.3.0(@typescript-eslint/utils@8.60.0(eslint@9.39.4)(typescript@6.0.3))(eslint@9.39.4)(prettier@3.8.3)(typescript@6.0.3)
       axios: 1.16.1
       commander: 12.1.0
       eslint: 9.39.4
       form-data: 4.0.5
-      lodash: 4.17.23
+      lodash: 4.18.1
       prettier: 3.8.3
     transitivePeerDependencies:
       - '@types/eslint'
@@ -4009,7 +4009,7 @@ snapshots:
 
   lodash.merge@4.6.2: {}
 
-  lodash@4.17.23: {}
+  lodash@4.18.1: {}
 
   loose-envify@1.4.0:
     dependencies:
