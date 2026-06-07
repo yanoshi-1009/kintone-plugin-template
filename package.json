@@ -41,7 +41,7 @@
     "@cybozu/eslint-config": "25.0.1",
     "@kintone/cli": "1.19.3",
     "@kintone/dts-gen": "9.0.7",
-    "@types/node": "25.9.1",
+    "@types/node": "25.9.2",
     "esbuild": "0.28.0",
     "eslint": "9.39.4",
     "prettier": "3.8.3",
