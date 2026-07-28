@@ -1,0 +1,5 @@
+@charset "UTF-8";
+
+/* Rules shared by the desktop, mobile and config stylesheets. Each of those is
+   a separate esbuild entry point because the manifest declares them
+   independently, so anything common belongs here and is inlined at build time. */

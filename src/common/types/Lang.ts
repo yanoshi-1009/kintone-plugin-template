@@ -4,10 +4,9 @@ export interface Lang {
       cancel: string;
       save: string;
     };
+    // message: {};
+    // error: {};
   };
-  //   message: {};
-  //   error: {};
-  // };
   // app: {
   //   label: {};
   //   message: {};
