@@ -1,3 +1,6 @@
+@charset "UTF-8";
+@import "../common/styles/common.css";
+
 #plugin-config-root {
   display: flex;
   flex-direction: column;

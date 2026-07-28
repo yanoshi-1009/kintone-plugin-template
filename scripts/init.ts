@@ -1,12 +1,9 @@
 import { execSync } from "node:child_process";
-import { existsSync, unlinkSync } from "node:fs";
-import { join, dirname } from "node:path";
-import { fileURLToPath } from "node:url";
-
-const __dirname = dirname(fileURLToPath(import.meta.url));
+import { existsSync, mkdirSync, unlinkSync } from "node:fs";
+import { join } from "node:path";
 
 try {
-  execSync("mkdir -p .cert", { stdio: "inherit" });
+  mkdirSync(".cert", { recursive: true });
   execSync(
     "mkcert -key-file .cert/private.key -cert-file .cert/private.cert localhost 127.0.0.1",
     { stdio: "inherit" }
@@ -15,14 +12,13 @@ try {
   execSync("cli-kintone plugin keygen --output private.ppk", {
     stdio: "inherit"
   });
-} catch (error) {
-  process.exit((error as { status?: number | null }).status ?? 1);
+} catch (error: unknown) {
+  console.error("\x1b[31mError during initialization:\x1b[0m", error);
+  throw error;
 }
 
-const targets = [
-  join(__dirname, "../renovate.json"),
-  join(__dirname, "../.gitkeep")
-];
+// Template-only files that a project generated from this template does not need.
+const targets = [join(import.meta.dirname, "../renovate.json")];
 
 for (const file of targets) {
   if (existsSync(file)) {

@@ -7,7 +7,7 @@
   ],
   "timezone": "Asia/Tokyo",
   "schedule": "before 6am",
-  "minimumReleaseAge": "1 days",
+  "minimumReleaseAge": "3 days",
   "labels": ["renovate"],
   "assignees": ["yanoshi-1009"],
   "rangeStrategy": "pin",
@@ -16,7 +16,7 @@
   },
   "packageRules": [
     {
-      "matchPackageNames": ["@cybozu/eslint-config", "typescript"],
+      "matchPackageNames": ["@cybozu/eslint-config"],
       "automerge": true
     },
     {

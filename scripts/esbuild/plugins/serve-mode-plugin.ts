@@ -1,8 +1,8 @@
-import type { Plugin, PluginBuild } from "esbuild";
+import type { Plugin } from "esbuild";
 
 const serveModePlugin: Plugin = {
   name: "serve-mode-plugin",
-  setup(build: PluginBuild) {
+  setup(build) {
     let startTime: Date | null = null;
     build.onStart(() => {
       startTime = new Date();
@@ -12,7 +12,8 @@ const serveModePlugin: Plugin = {
     build.onEnd(() => {
       const endTime = new Date();
       const duration =
-        (endTime.getTime() - (startTime as Date).getTime()) / 1000;
+        (endTime.getTime() - (startTime?.getTime() ?? endTime.getTime())) /
+        1000;
       console.log(
         `${endTime.toLocaleString()} Build finished in ${duration} seconds`
       );

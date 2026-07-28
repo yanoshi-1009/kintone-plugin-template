@@ -13,6 +13,9 @@
     "resolveJsonModule": true,
     "forceConsistentCasingInFileNames": true
   },
-  "files": ["./node_modules/@kintone/dts-gen/kintone.d.ts"],
+  "files": [
+    "./node_modules/@kintone/dts-gen/kintone.d.ts",
+    "src/common/types/fields.d.ts"
+  ],
   "include": ["./src/**/*.ts"]
 }

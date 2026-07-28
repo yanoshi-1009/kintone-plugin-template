@@ -12,24 +12,31 @@
     "url": "https://github.com/yanoshi-1009/kintone-plugin-template"
   },
   "type": "module",
-  "main": "index.js",
+  "engines": {
+    "node": ">=26.0.0"
+  },
   "devEngines": {
     "runtime": {
       "name": "node",
-      "version": ">=24.0.0",
+      "version": ">=26.0.0",
       "onFail": "error"
     },
     "packageManager": {
       "name": "pnpm",
-      "version": ">=10.0.0",
+      "version": ">=11.0.0",
       "onFail": "error"
     }
   },
   "scripts": {
     "init": "node ./scripts/init.ts",
-    "upload": "node ./scripts/upload.ts",
-    "build:prod": "node ./scripts/build-prod.ts",
-    "build:dev": "node ./scripts/build-dev.ts"
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "plugin:pack:dev": "cli-kintone plugin pack --input ./manifest.json --output ./dist/plugin.zip --private-key ./private.ppk",
+    "plugin:pack:prod": "cli-kintone plugin pack --input ./manifest.prod.json --output ./dist/plugin.zip --private-key ./private.ppk",
+    "build:dev": "tsc --noEmit && pnpm run plugin:pack:dev && node ./scripts/esbuild/build.ts --mode=development",
+    "build:prod": "tsc --noEmit && node ./scripts/esbuild/build.ts --mode=production && pnpm run plugin:pack:prod",
+    "upload": "cli-kintone plugin upload --input ./dist/plugin.zip --watch"
   },
   "dependencies": {
     "@kintone/rest-api-client": "6.2.1",
@@ -38,13 +45,14 @@
     "kintone-ui-component": "1.25.0"
   },
   "devDependencies": {
-    "@cybozu/eslint-config": "25.0.1",
+    "@cybozu/eslint-config": "26.0.0",
     "@kintone/cli": "1.21.0",
     "@kintone/dts-gen": "9.0.8",
-    "@types/node": "25.9.5",
+    "@types/node": "26.1.1",
+    "@typescript/native": "npm:typescript@7.0.2",
     "esbuild": "0.28.1",
-    "eslint": "9.39.5",
+    "eslint": "10.8.0",
     "prettier": "3.9.6",
-    "typescript": "7.0.2"
+    "typescript": "npm:@typescript/typescript6@6.0.2"
   }
 }

@@ -1,5 +1,5 @@
 import { Spinner, Notification } from "kintone-ui-component";
-import { ids } from "../common/config/constants";
+import { ids } from "../common/constants/config";
 import type { PluginConfig } from "../common/types/PluginConfig";
 import PluginFooterBuilder from "./components/PluginFooterBuilder";
 
