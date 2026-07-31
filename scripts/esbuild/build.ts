@@ -44,6 +44,7 @@ const context = await esbuild.context({
     "src/configPage/config.css"
   ],
   bundle: true,
+  target: "es2025",
   sourcemap: mode === "production" ? false : "inline",
   minify: mode === "production",
   legalComments: mode === "production" ? "eof" : "none",

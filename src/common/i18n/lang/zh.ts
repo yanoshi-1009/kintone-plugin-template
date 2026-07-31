@@ -1,4 +1,4 @@
-import { Lang } from "../../types/Lang";
+import type { Lang } from "../../types/Lang";
 
 export const zh: Lang = {
   config: {
