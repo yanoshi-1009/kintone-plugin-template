@@ -42,7 +42,7 @@
     "@kintone/rest-api-client": "6.2.1",
     "dayjs": "1.11.21",
     "i18next": "26.3.6",
-    "kintone-ui-component": "1.25.0"
+    "kintone-ui-component": "1.26.0"
   },
   "devDependencies": {
     "@cybozu/eslint-config": "26.0.0",
