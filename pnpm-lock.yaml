@@ -224,8 +224,8 @@ importers:
         specifier: 26.0.0
         version: 26.0.0(@typescript-eslint/utils@8.67.0(@typescript/typescript6@6.0.2)(eslint@10.8.1(supports-color@7.2.0))(supports-color@7.2.0))(@typescript/typescript6@6.0.2)(eslint@10.8.1(supports-color@7.2.0))(prettier@3.9.6)(supports-color@7.2.0)(ts-declaration-location@1.0.7(@typescript/typescript6@6.0.2))
       '@kintone/cli':
-        specifier: 1.21.0
-        version: 1.21.0(@types/node@26.2.0)(debug@4.4.3(supports-color@7.2.0))(supports-color@7.2.0)
+        specifier: 1.21.1
+        version: 1.21.1(@types/node@26.2.0)(debug@4.4.3(supports-color@7.2.0))(supports-color@7.2.0)
       '@kintone/dts-gen':
         specifier: 9.0.8
         version: 9.0.8(@typescript-eslint/utils@8.67.0(@typescript/typescript6@6.0.2)(eslint@10.8.1(supports-color@7.2.0))(supports-color@7.2.0))(@typescript/typescript6@6.0.2)(debug@4.4.3(supports-color@7.2.0))(supports-color@7.2.0)
@@ -769,8 +769,8 @@ packages:
   '@jridgewell/trace-mapping@0.3.31':
     resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
 
-  '@kintone/cli@1.21.0':
-    resolution: {integrity: sha512-M+jwTTcgcshbKqu05ZqfFr30/2EptBaVF6/T81JqEhPoFkSW8P9LNOe3z83K5549w64dv7KpnsTZYbEgSC0oqw==}
+  '@kintone/cli@1.21.1':
+    resolution: {integrity: sha512-K0VprJ+4KOsYSbx6iZLb0cQEz/PkKBokiAtzHwuqAlBm4dQX9mNLP76SKM9aUpFHPSBwri0kEJuct+/bw5kkXQ==}
     engines: {node: '>=20'}
     hasBin: true
 
@@ -781,10 +781,6 @@ packages:
 
   '@kintone/plugin-manifest-validator@11.3.0':
     resolution: {integrity: sha512-ntx3hNnwNsC82GFvIZAcMhyXwelqVaF7bipCq7k7UGVHM6cOgLoC9er9w68RcaH/p9nfUfRVw1cAVP5zS+ADyQ==}
-    engines: {node: '>=20'}
-
-  '@kintone/rest-api-client@6.2.0':
-    resolution: {integrity: sha512-2EgqYC9tl7C8T335aua7WZWelPFss+mUMcNA5P301IEfrUUYsNrSXcRlru93OjpjZFuT5dh+TAcxodjw+N3gcw==}
     engines: {node: '>=20'}
 
   '@kintone/rest-api-client@6.2.1':
@@ -1234,9 +1230,6 @@ packages:
     resolution: {integrity: sha512-UzGt8zg7Ny8djbYMhxl2zuEevVa7r2gJjYY5Lwr1xM7+XU2nd6CkIWFTVcCIbAP63vSz71NaVyyuSk9lHKcy0A==}
     engines: {node: '>=4'}
 
-  axios@1.16.1:
-    resolution: {integrity: sha512-caYkukvroVPO8KrzuJEb50Hm07KwfBZPEC3VeFHTsqWHvKTsy54hjJz9BS/cdaypROE2rH6xvm9mHX4fgWkr3A==}
-
   axios@1.18.1:
     resolution: {integrity: sha512-3nTvFlvpn9Zu/RkHUqtc7/+al4UpRW5az71ap5zccp6e8RAYEzhMTecX8Dz1wWDYrPpUoB1HAQEGEAEvUr7S9g==}
 
@@ -1607,6 +1600,7 @@ packages:
   eslint@9.39.4:
     resolution: {integrity: sha512-XoMjdBOwe/esVgEvLmNsD3IRHkm7fbKIUGvrleloJXUZgDHig2IPWNniv+GwjyJXzuNqVjlr5+4yVUZjycJwfQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+    deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
     hasBin: true
     peerDependencies:
       jiti: '*'
@@ -1689,10 +1683,6 @@ packages:
   for-each@0.3.5:
     resolution: {integrity: sha512-dKx12eRCVIzqCxFGplyFKJMPvLEWgmNtUrpTiJIR5u97zEhRG8ySrtboPHZXx7daLxQVrl643cTzbab2tkQjxg==}
     engines: {node: '>= 0.4'}
-
-  form-data@4.0.5:
-    resolution: {integrity: sha512-8RipRLol37bNs2bhoV67fiTEvdTrbMUYcFTiy3+wuuOnUog2QBHCZWXDRijWQfAkhBj2Uf5UnVaiWwA5vdd82w==}
-    engines: {node: '>= 6'}
 
   form-data@4.0.6:
     resolution: {integrity: sha512-vKatAh4SlVfgbv+YtmhiRjhEMJsYpsG1Y2rMQtR+SVSbytsSD1YGzDIcrAJmdFec88u/+VoGmxnl+80gL1tRCQ==}
@@ -1956,9 +1946,6 @@ packages:
     resolution: {integrity: sha512-H0dkQoCa3b2VEeKQBOxFph+JAbcrQdE7KC0UkqwpLmv2EC4P41QXP+rqo9wYodACiG5/WM5s9oDApTU8utwj9g==}
     engines: {node: '>= 0.4'}
 
-  js-base64@3.7.8:
-    resolution: {integrity: sha512-hNngCeKxIUQiEUN3GPJOkz4wF/YvdUdbNL9hsBcMQTkKzboD7T/q3OYOuuPZLUE6dBxSGpwhk5mwuDud7JVAow==}
-
   js-base64@3.8.0:
     resolution: {integrity: sha512-65kvbemyZhj+ExQt1PEFyBEjL5vAHysu1lJdW1AwhhChkO8ZBPizYk/m9GVrpbS2Je1hF+UYZ+6KywqtZV8mHw==}
 
@@ -2206,10 +2193,6 @@ packages:
     resolution: {integrity: sha512-vYt7UD1U9Wg6138shLtLOvdAu+8DsC/ilFtEVHcH+wydcSpNE20AfSOduf6MkRFahL5FY7X1oU7nKVZFtfq8Fg==}
     engines: {node: '>=6'}
 
-  qs@6.15.1:
-    resolution: {integrity: sha512-6YHEFRL9mfgcAvql/XhwTvf5jKcOiiupt2FiJxHkiX1z4j7WL8J/jRHYLluORvc1XxB5rV20KoeK00gVJamspg==}
-    engines: {node: '>=0.6'}
-
   qs@6.15.3:
     resolution: {integrity: sha512-O9gl3zCl5h5blw1KGUzQKhA5oUXSl8rwUIM5o0S3nCXMliSvy5Dzx7/DJcI+SwgICv+IneSZwhBh1oSyEHA71A==}
     engines: {node: '>=0.6'}
@@ -2376,8 +2359,8 @@ packages:
     resolution: {integrity: sha512-uxc/zpqFg6x7C8vOE7lh6Lbda8eEL9zmVm/PLeTPBRhh1xCgdWaQ+J1CUieGpIfm2HdtsUpRv+HshiasBMcc6A==}
     engines: {node: '>=6'}
 
-  tar@7.5.19:
-    resolution: {integrity: sha512-4LeEWl96twnS2Q7Bz4MGqgazLqO+hJN63GZxXoIqh1T3VweYD997gbU1ItNsQafqqXTXd5WFyFdReLtwvRBNiw==}
+  tar@7.5.22:
+    resolution: {integrity: sha512-MFO/QzvtAOmJbkhOaCTvbGcFN9L9b+JunIsDwaKljSOdcLMea3NJ1k9Usz/rjdfSXTq4dfzfeS7W4p4YOAAHeA==}
     engines: {node: '>=18'}
 
   tinyglobby@0.2.17:
@@ -3059,18 +3042,18 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
 
-  '@kintone/cli@1.21.0(@types/node@26.2.0)(debug@4.4.3(supports-color@7.2.0))(supports-color@7.2.0)':
+  '@kintone/cli@1.21.1(@types/node@26.2.0)(debug@4.4.3(supports-color@7.2.0))(supports-color@7.2.0)':
     dependencies:
       '@inquirer/prompts': 7.10.1(@types/node@26.2.0)
       '@kintone/plugin-manifest-validator': 11.3.0
-      '@kintone/rest-api-client': 6.2.0(debug@4.4.3(supports-color@7.2.0))(supports-color@7.2.0)
+      '@kintone/rest-api-client': 6.2.1(debug@4.4.3(supports-color@7.2.0))(supports-color@7.2.0)
       chalk: 4.1.2
       chokidar: 4.0.3
       csv-parse: 5.6.0
       csv-stringify: 6.5.2
       https-proxy-agent: 7.0.6(supports-color@7.2.0)
       iconv-lite: 0.7.3
-      tar: 7.5.19
+      tar: 7.5.22
       yargs: 17.7.3
       yauzl: 3.2.1
       yazl: 3.3.1
@@ -3102,17 +3085,6 @@ snapshots:
       ajv: 8.20.0
       ajv-formats: 3.0.1(ajv@8.20.0)
       bytes: 3.1.2
-
-  '@kintone/rest-api-client@6.2.0(debug@4.4.3(supports-color@7.2.0))(supports-color@7.2.0)':
-    dependencies:
-      axios: 1.16.1(debug@4.4.3(supports-color@7.2.0))(supports-color@7.2.0)
-      form-data: 4.0.5
-      js-base64: 3.7.8
-      mime: 3.0.0
-      qs: 6.15.1
-    transitivePeerDependencies:
-      - debug
-      - supports-color
 
   '@kintone/rest-api-client@6.2.1(debug@4.4.3(supports-color@7.2.0))(supports-color@7.2.0)':
     dependencies:
@@ -3563,16 +3535,6 @@ snapshots:
       possible-typed-array-names: 1.1.0
 
   axe-core@4.13.0: {}
-
-  axios@1.16.1(debug@4.4.3(supports-color@7.2.0))(supports-color@7.2.0):
-    dependencies:
-      follow-redirects: 1.16.0(debug@4.4.3(supports-color@7.2.0))
-      form-data: 4.0.5
-      https-proxy-agent: 5.0.1(supports-color@7.2.0)
-      proxy-from-env: 2.1.0
-    transitivePeerDependencies:
-      - debug
-      - supports-color
 
   axios@1.18.1(debug@4.4.3(supports-color@7.2.0))(supports-color@7.2.0):
     dependencies:
@@ -4238,14 +4200,6 @@ snapshots:
     dependencies:
       is-callable: 1.2.7
 
-  form-data@4.0.5:
-    dependencies:
-      asynckit: 0.4.0
-      combined-stream: 1.0.8
-      es-set-tostringtag: 2.1.0
-      hasown: 2.0.4
-      mime-types: 2.1.35
-
   form-data@4.0.6:
     dependencies:
       asynckit: 0.4.0
@@ -4519,8 +4473,6 @@ snapshots:
       has-symbols: 1.1.0
       set-function-name: 2.0.2
 
-  js-base64@3.7.8: {}
-
   js-base64@3.8.0: {}
 
   js-tokens@4.0.0: {}
@@ -4746,10 +4698,6 @@ snapshots:
 
   punycode@2.3.1: {}
 
-  qs@6.15.1:
-    dependencies:
-      side-channel: 1.1.1
-
   qs@6.15.3:
     dependencies:
       es-define-property: 1.0.1
@@ -4963,7 +4911,7 @@ snapshots:
 
   tapable@2.3.3: {}
 
-  tar@7.5.19:
+  tar@7.5.22:
     dependencies:
       '@isaacs/fs-minipass': 4.0.1
       chownr: 3.0.0
