@@ -45,7 +45,7 @@
     "kintone-ui-component": "1.26.0"
   },
   "devDependencies": {
-    "@cybozu/eslint-config": "26.0.0",
+    "@cybozu/eslint-config": "26.0.1",
     "@kintone/cli": "1.21.2",
     "@kintone/dts-gen": "9.0.8",
     "@types/node": "26.5.1",
