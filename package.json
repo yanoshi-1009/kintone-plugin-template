@@ -48,7 +48,7 @@
     "@cybozu/eslint-config": "26.0.1",
     "@kintone/cli": "1.21.3",
     "@kintone/dts-gen": "9.0.8",
-    "@types/node": "26.6.0",
+    "@types/node": "26.6.1",
     "@typescript/native": "npm:typescript@7.0.2",
     "esbuild": "0.28.2",
     "eslint": "10.10.0",
