@@ -183,8 +183,8 @@ importers:
         specifier: 26.0.1
         version: 26.0.1(@typescript-eslint/utils@8.70.0(@typescript/typescript6@6.0.2)(eslint@10.12.0(supports-color@7.2.0))(supports-color@7.2.0))(@typescript/typescript6@6.0.2)(eslint@10.12.0(supports-color@7.2.0))(prettier@3.9.9)(supports-color@7.2.0)(ts-declaration-location@1.0.7(@typescript/typescript6@6.0.2))
       '@kintone/cli':
-        specifier: 1.21.3
-        version: 1.21.3(@types/node@26.6.4)(debug@4.4.3(supports-color@7.2.0))(supports-color@7.2.0)
+        specifier: 1.21.4
+        version: 1.21.4(@types/node@26.6.4)(debug@4.4.3(supports-color@7.2.0))(supports-color@7.2.0)
       '@kintone/dts-gen':
         specifier: 9.0.8
         version: 9.0.8(@typescript-eslint/utils@8.70.0(@typescript/typescript6@6.0.2)(eslint@10.12.0(supports-color@7.2.0))(supports-color@7.2.0))(@typescript/typescript6@6.0.2)(debug@4.4.3(supports-color@7.2.0))(supports-color@7.2.0)
@@ -743,8 +743,8 @@ packages:
   '@keyv/serialize@1.1.1':
     resolution: {integrity: sha512-dXn3FZhPv0US+7dtJsIi2R+c7qWYiReoEh5zUntWCf4oSpMNib8FDhSoed6m3QyZdx5hK7iLFkYk3rNxwt8vTA==}
 
-  '@kintone/cli@1.21.3':
-    resolution: {integrity: sha512-MDYebkLclZIh2rd2K+6qdxEHP0jjHNZotj1/mlyIVaqfwDVLKgABXpDMmBNDcJUG2sUFoSP5EpQt1N5qW7bZmw==}
+  '@kintone/cli@1.21.4':
+    resolution: {integrity: sha512-SUzjkpK27Mel8V+3soHHYOu9HsaFull4faKjLNwLoSK/+euo2UaznZDTywCd+47rwoZT5/h7HzyN59PbWKdK6w==}
     engines: {node: '>=20'}
     hasBin: true
 
@@ -1131,11 +1131,6 @@ packages:
 
   ajv-formats@3.0.1:
     resolution: {integrity: sha512-8iUql50EUR+uUcdRQ3HDqa6EVyo3docL8g5WJ3FNcWmu62IbkGUue/pEyLBW8VGKKucTPgqeks4fIU1DA4yowQ==}
-    peerDependencies:
-      ajv: ^8.0.0
-    peerDependenciesMeta:
-      ajv:
-        optional: true
 
   ajv@6.15.0:
     resolution: {integrity: sha512-fgFx7Hfoq60ytK2c7DhnF8jIvzYgOMxfugjLOSMHjLIPgenqa7S7oaagATUq99mV6IYvN2tRmC0wnTYX6iPbMw==}
@@ -3062,7 +3057,7 @@ snapshots:
 
   '@keyv/serialize@1.1.1': {}
 
-  '@kintone/cli@1.21.3(@types/node@26.6.4)(debug@4.4.3(supports-color@7.2.0))(supports-color@7.2.0)':
+  '@kintone/cli@1.21.4(@types/node@26.6.4)(debug@4.4.3(supports-color@7.2.0))(supports-color@7.2.0)':
     dependencies:
       '@inquirer/prompts': 7.10.1(@types/node@26.6.4)
       '@kintone/plugin-manifest-validator': 11.3.0
@@ -3103,7 +3098,7 @@ snapshots:
   '@kintone/plugin-manifest-validator@11.3.0':
     dependencies:
       ajv: 8.20.0
-      ajv-formats: 3.0.1(ajv@8.20.0)
+      ajv-formats: 3.0.1
       bytes: 3.1.2
 
   '@kintone/rest-api-client@6.2.1(debug@4.4.3(supports-color@7.2.0))(supports-color@7.2.0)':
@@ -3459,8 +3454,8 @@ snapshots:
 
   agent-base@7.1.4: {}
 
-  ajv-formats@3.0.1(ajv@8.20.0):
-    optionalDependencies:
+  ajv-formats@3.0.1:
+    dependencies:
       ajv: 8.20.0
 
   ajv@6.15.0:
