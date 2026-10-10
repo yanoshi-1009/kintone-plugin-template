@@ -46,7 +46,7 @@
   },
   "devDependencies": {
     "@cybozu/eslint-config": "26.0.1",
-    "@kintone/cli": "1.21.3",
+    "@kintone/cli": "1.21.4",
     "@kintone/dts-gen": "9.0.8",
     "@types/node": "26.6.4",
     "@typescript/native": "npm:typescript@7.0.2",
