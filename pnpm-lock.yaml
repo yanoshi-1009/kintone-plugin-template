@@ -173,8 +173,8 @@ importers:
         specifier: 1.11.23
         version: 1.11.23
       i18next:
-        specifier: 26.4.3
-        version: 26.4.3(@typescript/typescript6@6.0.2)
+        specifier: 26.4.4
+        version: 26.4.4(@typescript/typescript6@6.0.2)
       kintone-ui-component:
         specifier: 1.26.0
         version: 1.26.0
@@ -1784,8 +1784,8 @@ packages:
     resolution: {integrity: sha512-vK9P5/iUfdl95AI+JVyUuIcVtd4ofvtrOr3HNtM2yxC9bnMbEdp3x01OhQNnjb8IJYi38VlTE3mBXwcfvywuSw==}
     engines: {node: '>= 14'}
 
-  i18next@26.4.3:
-    resolution: {integrity: sha512-QIIueUYS2giFVIY3hu/X5Dz7/qTzwcXE06H29m1DKVhUGVPCyT0wnsh14wEn/cTy9nZ/B6VhbDItdXotOKSO8A==}
+  i18next@26.4.4:
+    resolution: {integrity: sha512-O+rqmQUi54OwAgnZ4SAwO6aRrbXZt36VZXWt6zvq0FpC3vJbH46oQRs6u4Uwm1vf8ZI7UqOXQiJhQVTor7vRiQ==}
     peerDependencies:
       typescript: ^5 || ^6 || ^7
     peerDependenciesMeta:
@@ -4358,7 +4358,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  i18next@26.4.3(@typescript/typescript6@6.0.2):
+  i18next@26.4.4(@typescript/typescript6@6.0.2):
     optionalDependencies:
       typescript: '@typescript/typescript6@6.0.2'
 
