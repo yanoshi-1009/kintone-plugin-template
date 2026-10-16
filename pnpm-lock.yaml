@@ -167,8 +167,8 @@ importers:
   .:
     dependencies:
       '@kintone/rest-api-client':
-        specifier: 6.3.0
-        version: 6.3.0(debug@4.4.3(supports-color@7.2.0))(supports-color@7.2.0)
+        specifier: 6.4.0
+        version: 6.4.0(debug@4.4.3(supports-color@7.2.0))(supports-color@7.2.0)
       dayjs:
         specifier: 1.11.23
         version: 1.11.23
@@ -755,6 +755,10 @@ packages:
 
   '@kintone/rest-api-client@6.3.0':
     resolution: {integrity: sha512-KzGblg44Eegqzyvd9AihuwtA5HtXKMeUSDcTZaokCXSNtxU8nYen6qMlkXMZW9C2NE+yBOYmz05elqyCN62etg==}
+    engines: {node: '>=20'}
+
+  '@kintone/rest-api-client@6.4.0':
+    resolution: {integrity: sha512-ckUAJx4YOUhJRZByQHbPMSc4wkFkJhCq3anOwMHTsB6Ytr8XPJhRGM0TUgJyHk7w4RevfNKvt1/KsB0tpbpYMA==}
     engines: {node: '>=20'}
 
   '@lit-labs/ssr-dom-shim@1.6.0':
@@ -3096,6 +3100,17 @@ snapshots:
       bytes: 3.1.2
 
   '@kintone/rest-api-client@6.3.0(debug@4.4.3(supports-color@7.2.0))(supports-color@7.2.0)':
+    dependencies:
+      axios: 1.20.0(debug@4.4.3(supports-color@7.2.0))(supports-color@7.2.0)
+      form-data: 4.0.6
+      js-base64: 3.8.1
+      mime: 3.0.0
+      qs: 6.15.3
+    transitivePeerDependencies:
+      - debug
+      - supports-color
+
+  '@kintone/rest-api-client@6.4.0(debug@4.4.3(supports-color@7.2.0))(supports-color@7.2.0)':
     dependencies:
       axios: 1.20.0(debug@4.4.3(supports-color@7.2.0))(supports-color@7.2.0)
       form-data: 4.0.6
