@@ -183,8 +183,8 @@ importers:
         specifier: 26.1.0
         version: 26.1.0(@typescript-eslint/utils@8.72.0(@typescript/typescript6@6.0.2)(eslint@10.14.0(supports-color@7.2.0))(supports-color@7.2.0))(@typescript/typescript6@6.0.2)(eslint@10.14.0(supports-color@7.2.0))(prettier@3.9.10)(supports-color@7.2.0)(ts-declaration-location@1.0.7(@typescript/typescript6@6.0.2))
       '@kintone/cli':
-        specifier: 1.22.3
-        version: 1.22.3(@types/node@26.6.6)(debug@4.4.3(supports-color@7.2.0))(supports-color@7.2.0)
+        specifier: 1.22.4
+        version: 1.22.4(@types/node@26.6.6)(debug@4.4.3(supports-color@7.2.0))(supports-color@7.2.0)
       '@kintone/dts-gen':
         specifier: 9.0.9
         version: 9.0.9(@typescript-eslint/utils@8.72.0(@typescript/typescript6@6.0.2)(eslint@10.14.0(supports-color@7.2.0))(supports-color@7.2.0))(@typescript/typescript6@6.0.2)(debug@4.4.3(supports-color@7.2.0))(supports-color@7.2.0)
@@ -742,9 +742,9 @@ packages:
   '@keyv/serialize@1.1.1':
     resolution: {integrity: sha512-dXn3FZhPv0US+7dtJsIi2R+c7qWYiReoEh5zUntWCf4oSpMNib8FDhSoed6m3QyZdx5hK7iLFkYk3rNxwt8vTA==}
 
-  '@kintone/cli@1.22.3':
-    resolution: {integrity: sha512-hRGIAp7M4BOOIKNcJ4Myx/XQ+DfiFt2Z2uvnAEcPoW/jFAkPsoEc+gkaVG9EJ8sbZiughMnlxeL+/oja6W+RHg==}
-    engines: {node: '>=20'}
+  '@kintone/cli@1.22.4':
+    resolution: {integrity: sha512-+lM1cxdW32y1VlhAgLQv0DpvsoHvca0yWqR7pLeHKGVa6AV+WSNhj6hG16xz3aXIs8QFLT+odMTB/bjFrO3X2w==}
+    engines: {node: '>=22'}
     hasBin: true
 
   '@kintone/dts-gen@9.0.9':
@@ -3076,7 +3076,7 @@ snapshots:
 
   '@keyv/serialize@1.1.1': {}
 
-  '@kintone/cli@1.22.3(@types/node@26.6.6)(debug@4.4.3(supports-color@7.2.0))(supports-color@7.2.0)':
+  '@kintone/cli@1.22.4(@types/node@26.6.6)(debug@4.4.3(supports-color@7.2.0))(supports-color@7.2.0)':
     dependencies:
       '@inquirer/prompts': 7.10.1(@types/node@26.6.6)
       '@kintone/plugin-manifest-validator': 11.3.0
