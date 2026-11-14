@@ -183,8 +183,8 @@ importers:
         specifier: 26.2.0
         version: 26.2.0(@typescript-eslint/utils@8.72.0(@typescript/typescript6@6.0.2)(eslint@10.14.0(supports-color@7.2.0))(supports-color@7.2.0))(@typescript/typescript6@6.0.2)(eslint@10.14.0(supports-color@7.2.0))(prettier@3.9.10)(supports-color@7.2.0)(ts-declaration-location@1.0.7(@typescript/typescript6@6.0.2))
       '@kintone/cli':
-        specifier: 1.22.4
-        version: 1.22.4(@types/node@26.6.6)(debug@4.4.3(supports-color@7.2.0))(supports-color@7.2.0)
+        specifier: 1.22.5
+        version: 1.22.5(@types/node@26.6.6)(debug@4.4.3(supports-color@7.2.0))(supports-color@7.2.0)
       '@kintone/dts-gen':
         specifier: 9.0.9
         version: 9.0.9(@typescript-eslint/utils@8.72.0(@typescript/typescript6@6.0.2)(eslint@10.14.0(supports-color@7.2.0))(supports-color@7.2.0))(@typescript/typescript6@6.0.2)(debug@4.4.3(supports-color@7.2.0))(supports-color@7.2.0)
@@ -742,8 +742,8 @@ packages:
   '@keyv/serialize@1.1.1':
     resolution: {integrity: sha512-dXn3FZhPv0US+7dtJsIi2R+c7qWYiReoEh5zUntWCf4oSpMNib8FDhSoed6m3QyZdx5hK7iLFkYk3rNxwt8vTA==}
 
-  '@kintone/cli@1.22.4':
-    resolution: {integrity: sha512-+lM1cxdW32y1VlhAgLQv0DpvsoHvca0yWqR7pLeHKGVa6AV+WSNhj6hG16xz3aXIs8QFLT+odMTB/bjFrO3X2w==}
+  '@kintone/cli@1.22.5':
+    resolution: {integrity: sha512-MP9fSXpuaBofg+/sK8PIvIWUJU7fnppxZd01KMJwvru21dE2EK3NZkI4ZHFHRkznH1FHOOGQlhyBN6beNheEMw==}
     engines: {node: '>=22'}
     hasBin: true
 
@@ -756,8 +756,8 @@ packages:
     resolution: {integrity: sha512-ntx3hNnwNsC82GFvIZAcMhyXwelqVaF7bipCq7k7UGVHM6cOgLoC9er9w68RcaH/p9nfUfRVw1cAVP5zS+ADyQ==}
     engines: {node: '>=20'}
 
-  '@kintone/rest-api-client@6.4.0':
-    resolution: {integrity: sha512-ckUAJx4YOUhJRZByQHbPMSc4wkFkJhCq3anOwMHTsB6Ytr8XPJhRGM0TUgJyHk7w4RevfNKvt1/KsB0tpbpYMA==}
+  '@kintone/rest-api-client@6.5.0':
+    resolution: {integrity: sha512-63yKZ+CDHmiYHkWj1BuChfvEt+38gHhjiv1grJ10AoE5nSdSXe+oA1H2ANuwIo+SpaIAAXuiPOkCWBSqBiMROA==}
     engines: {node: '>=20'}
 
   '@kintone/rest-api-client@6.6.1':
@@ -2002,9 +2002,6 @@ packages:
     resolution: {integrity: sha512-H0dkQoCa3b2VEeKQBOxFph+JAbcrQdE7KC0UkqwpLmv2EC4P41QXP+rqo9wYodACiG5/WM5s9oDApTU8utwj9g==}
     engines: {node: '>= 0.4'}
 
-  js-base64@3.8.1:
-    resolution: {integrity: sha512-5xVjhUZlHHeuO2W7w2rDFj/Kl1xLX+HjZxdOQwCsUOifl6UaoH1o1wsbsTMz+r0aeC7gCijvru02j6TfKZWzKg==}
-
   js-base64@3.9.4:
     resolution: {integrity: sha512-PtOMXpEGuP0RRiRXsjzHzl44dMHxSu2CPvAhinupR1tBa88me+1DPqsobl7eupn5UukjLkln1ZnAOAOXOrYG0Q==}
 
@@ -2263,8 +2260,8 @@ packages:
     resolution: {integrity: sha512-+Owyggi9IxT1ePKGafcI87ubSmxol6smwJ+RAHDQlx9+9cPwFWDiKFFCPuWhr9ignlGpZ9vDQLw67N4dcTVFEA==}
     engines: {node: '>=20'}
 
-  qs@6.15.3:
-    resolution: {integrity: sha512-O9gl3zCl5h5blw1KGUzQKhA5oUXSl8rwUIM5o0S3nCXMliSvy5Dzx7/DJcI+SwgICv+IneSZwhBh1oSyEHA71A==}
+  qs@6.16.0:
+    resolution: {integrity: sha512-h6fhOIaRrID2CbEY2fqs+7t+UXZo+MLAnU5gRIq85uFtdiUPCdsApMlHhXogKVM4HM2DVbIjGNTTYH2OcmP1vA==}
     engines: {node: '>=0.6'}
 
   qs@6.16.1:
@@ -3143,11 +3140,11 @@ snapshots:
 
   '@keyv/serialize@1.1.1': {}
 
-  '@kintone/cli@1.22.4(@types/node@26.6.6)(debug@4.4.3(supports-color@7.2.0))(supports-color@7.2.0)':
+  '@kintone/cli@1.22.5(@types/node@26.6.6)(debug@4.4.3(supports-color@7.2.0))(supports-color@7.2.0)':
     dependencies:
       '@inquirer/prompts': 7.10.1(@types/node@26.6.6)
       '@kintone/plugin-manifest-validator': 11.3.0
-      '@kintone/rest-api-client': 6.4.0(debug@4.4.3(supports-color@7.2.0))(supports-color@7.2.0)
+      '@kintone/rest-api-client': 6.5.0(debug@4.4.3(supports-color@7.2.0))(supports-color@7.2.0)
       chalk: 4.1.2
       chokidar: 4.0.3
       csv-parse: 7.0.3
@@ -3187,13 +3184,13 @@ snapshots:
       ajv-formats: 3.0.1
       bytes: 3.1.2
 
-  '@kintone/rest-api-client@6.4.0(debug@4.4.3(supports-color@7.2.0))(supports-color@7.2.0)':
+  '@kintone/rest-api-client@6.5.0(debug@4.4.3(supports-color@7.2.0))(supports-color@7.2.0)':
     dependencies:
       axios: 1.20.0(debug@4.4.3(supports-color@7.2.0))(supports-color@7.2.0)
       form-data: 4.0.6
-      js-base64: 3.8.1
+      js-base64: 3.9.4
       mime: 3.0.0
-      qs: 6.15.3
+      qs: 6.16.0
     transitivePeerDependencies:
       - debug
       - supports-color
@@ -4664,8 +4661,6 @@ snapshots:
       has-symbols: 1.1.0
       set-function-name: 2.0.2
 
-  js-base64@3.8.1: {}
-
   js-base64@3.9.4: {}
 
   js-tokens@4.0.0: {}
@@ -4903,7 +4898,7 @@ snapshots:
     dependencies:
       hookified: 2.2.0
 
-  qs@6.15.3:
+  qs@6.16.0:
     dependencies:
       es-define-property: 1.0.1
       side-channel: 1.1.1
