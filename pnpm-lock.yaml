@@ -183,8 +183,8 @@ importers:
         specifier: 26.2.0
         version: 26.2.0(@typescript-eslint/utils@8.72.0(@typescript/typescript6@6.0.2)(eslint@10.14.0(supports-color@7.2.0))(supports-color@7.2.0))(@typescript/typescript6@6.0.2)(eslint@10.14.0(supports-color@7.2.0))(prettier@3.10.0)(supports-color@7.2.0)(ts-declaration-location@1.0.7(@typescript/typescript6@6.0.2))
       '@kintone/cli':
-        specifier: 1.22.5
-        version: 1.22.5(@types/node@26.6.6)(debug@4.4.3(supports-color@7.2.0))(supports-color@7.2.0)
+        specifier: 1.22.6
+        version: 1.22.6(@types/node@26.6.6)(debug@4.4.3(supports-color@7.2.0))(supports-color@7.2.0)
       '@kintone/dts-gen':
         specifier: 9.0.9
         version: 9.0.9(@typescript-eslint/utils@8.72.0(@typescript/typescript6@6.0.2)(eslint@10.14.0(supports-color@7.2.0))(supports-color@7.2.0))(@typescript/typescript6@6.0.2)(debug@4.4.3(supports-color@7.2.0))(supports-color@7.2.0)
@@ -742,8 +742,8 @@ packages:
   '@keyv/serialize@1.1.1':
     resolution: {integrity: sha512-dXn3FZhPv0US+7dtJsIi2R+c7qWYiReoEh5zUntWCf4oSpMNib8FDhSoed6m3QyZdx5hK7iLFkYk3rNxwt8vTA==}
 
-  '@kintone/cli@1.22.5':
-    resolution: {integrity: sha512-MP9fSXpuaBofg+/sK8PIvIWUJU7fnppxZd01KMJwvru21dE2EK3NZkI4ZHFHRkznH1FHOOGQlhyBN6beNheEMw==}
+  '@kintone/cli@1.22.6':
+    resolution: {integrity: sha512-9Sq92sE/c0bDUld/n7n9doJaXp4wbbRPy/lzf6IH4TvC3wZI9DjOb9havlD9z2mbfhiNBNQVQw2pwqk3x2GAfg==}
     engines: {node: '>=22'}
     hasBin: true
 
@@ -756,8 +756,8 @@ packages:
     resolution: {integrity: sha512-ntx3hNnwNsC82GFvIZAcMhyXwelqVaF7bipCq7k7UGVHM6cOgLoC9er9w68RcaH/p9nfUfRVw1cAVP5zS+ADyQ==}
     engines: {node: '>=20'}
 
-  '@kintone/rest-api-client@6.5.0':
-    resolution: {integrity: sha512-63yKZ+CDHmiYHkWj1BuChfvEt+38gHhjiv1grJ10AoE5nSdSXe+oA1H2ANuwIo+SpaIAAXuiPOkCWBSqBiMROA==}
+  '@kintone/rest-api-client@6.6.0':
+    resolution: {integrity: sha512-0pa2wo/zOGPbCIMru5dsszXgCqFxSrfejouioMXUabdl0zHWp+9mdQKlPcSLp3fuDamCQK8pLDKpViYI3n9hcA==}
     engines: {node: '>=20'}
 
   '@kintone/rest-api-client@6.6.1':
@@ -3140,11 +3140,11 @@ snapshots:
 
   '@keyv/serialize@1.1.1': {}
 
-  '@kintone/cli@1.22.5(@types/node@26.6.6)(debug@4.4.3(supports-color@7.2.0))(supports-color@7.2.0)':
+  '@kintone/cli@1.22.6(@types/node@26.6.6)(debug@4.4.3(supports-color@7.2.0))(supports-color@7.2.0)':
     dependencies:
       '@inquirer/prompts': 7.10.1(@types/node@26.6.6)
       '@kintone/plugin-manifest-validator': 11.3.0
-      '@kintone/rest-api-client': 6.5.0(debug@4.4.3(supports-color@7.2.0))(supports-color@7.2.0)
+      '@kintone/rest-api-client': 6.6.0(debug@4.4.3(supports-color@7.2.0))(supports-color@7.2.0)
       chalk: 4.1.2
       chokidar: 4.0.3
       csv-parse: 7.0.3
@@ -3184,7 +3184,7 @@ snapshots:
       ajv-formats: 3.0.1
       bytes: 3.1.2
 
-  '@kintone/rest-api-client@6.5.0(debug@4.4.3(supports-color@7.2.0))(supports-color@7.2.0)':
+  '@kintone/rest-api-client@6.6.0(debug@4.4.3(supports-color@7.2.0))(supports-color@7.2.0)':
     dependencies:
       axios: 1.20.0(debug@4.4.3(supports-color@7.2.0))(supports-color@7.2.0)
       form-data: 4.0.6
