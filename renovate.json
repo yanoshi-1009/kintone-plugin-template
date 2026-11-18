@@ -2,12 +2,11 @@
   "extends": [
     "config:recommended",
     ":automergeMinor",
-    ":maintainLockFilesWeekly",
-    ":skipStatusChecks"
+    ":maintainLockFilesWeekly"
   ],
   "timezone": "Asia/Tokyo",
   "schedule": "before 6am",
-  "minimumReleaseAge": "3 days",
+  "minimumReleaseAge": "7 days",
   "labels": ["renovate"],
   "assignees": ["yanoshi-1009"],
   "rangeStrategy": "pin",
@@ -18,10 +17,6 @@
     {
       "matchPackageNames": ["@cybozu/eslint-config"],
       "automerge": true
-    },
-    {
-      "matchPackageNames": ["node", "pnpm"],
-      "enabled": false
     }
   ]
 }

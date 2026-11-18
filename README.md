@@ -20,22 +20,14 @@ This project provides a template for building kintone plugins using [esbuild](ht
 
 ### Prerequisites
 
-- Node.js (v26 or later)
-- pnpm (v11 or later)
-- [mise](https://mise.jdx.dev/) (recommended, for managing the versions above)
+- [pnpm](https://pnpm.io/installation) (v11 or later)
 - [mkcert](https://github.com/FiloSottile/mkcert) (for generating a locally-trusted development certificate)
 
-#### Managing Node.js and pnpm with mise
+#### Node.js and pnpm versions
 
-[`mise.toml`](./mise.toml) pins the required versions, so a single command installs both:
+The exact Node.js and pnpm versions are pinned in `devEngines` in `package.json` with `onFail: "download"`. pnpm switches itself to the pinned version and downloads the pinned Node.js into `node_modules/.bin`, so you do not need to install Node.js yourself. Scripts run through `pnpm` use that Node.js; to run it directly, use `pnpm exec node`.
 
-```bash
-mise install
-```
-
-The versions are not just a suggestion. `devEngines` in `package.json` sets `onFail: "error"`, so pnpm aborts rather than warns when the active Node.js or pnpm version does not satisfy the range.
-
-Every script under `scripts/` is a `.ts` file executed directly by Node.js through its native type stripping — there is no transpile step, which is why Node.js v26+ is required.
+Every script under `scripts/` is a `.ts` file executed directly by Node.js through its native type stripping — there is no transpile step for them.
 
 #### Install mkcert (one-time setup per machine)
 
@@ -67,7 +59,7 @@ This script ([`scripts/init.ts`](./scripts/init.ts)):
 - Creates the `.cert` directory and a locally-trusted certificate via `mkcert`
 - Installs dependencies with `pnpm install`
 - Generates `private.ppk`, the private key that determines your plugin ID
-- Removes template-only files (`renovate.json`) if present
+- Removes template-only files (`renovate.json`, `LICENSE`) if present
 
 ### TypeScript Setup (v7 native)
 
@@ -117,7 +109,7 @@ pnpm exec tsc6 --noEmit
 
 This requires a VS Code version that supports the native TypeScript language server. Older versions simply ignore the setting and fall back to the JavaScript-based server.
 
-`tsc --noEmit` only covers `src/` (see `include` in [`tsconfig.json`](./tsconfig.json)). [`scripts/tsconfig.json`](./scripts/tsconfig.json) exists so your editor type checks the build scripts correctly — they need Node.js types and `.ts` import extensions, which the browser-facing root config deliberately excludes.
+`pnpm typecheck` type checks both `src/` (with [`tsconfig.json`](./tsconfig.json)) and `scripts/` (with [`scripts/tsconfig.json`](./scripts/tsconfig.json)). The build scripts get their own config because they need Node.js types and `.ts` import extensions, which the browser-facing root config deliberately excludes.
 
 ### Generating Type Definitions
 
@@ -150,9 +142,9 @@ The dev server URL appears in both `manifest.json` and `scripts/esbuild/build.ts
 pnpm build:dev
 ```
 
-- Runs the TypeScript type check (`tsc --noEmit`) before anything else
+- Runs `pnpm typecheck` (type checks both `src/` and `scripts/`) before anything else
 - Packages `dist/plugin.zip` from `manifest.json` (in this mode the zip contains only the icon and `config.html`, since the js/css are fetched over HTTPS)
-- Starts a local HTTPS server at [https://localhost:9000](https://localhost:9000) and rebuilds on request
+- Starts a local HTTPS server at [https://localhost:9000](https://localhost:9000) and rebuilds automatically when files change
 
 > **Warning:** the plugin ID is derived from `private.ppk`, and kintone applies an uploaded plugin to every app using that ID immediately. A development zip references `https://localhost:9000`, so uploading one over a released plugin breaks it for all users. Keep development uploads to a separate kintone environment.
 
@@ -162,7 +154,7 @@ pnpm build:dev
 pnpm build:prod
 ```
 
-- Runs the TypeScript type check (`tsc --noEmit`) before anything else
+- Runs `pnpm typecheck` (type checks both `src/` and `scripts/`) before anything else
 - Outputs minified, bundled files to the `dist` directory (no source maps)
 - Packages the plugin as `dist/plugin.zip` from `manifest.prod.json`
 
@@ -180,9 +172,10 @@ pnpm upload
 pnpm lint        # Check with ESLint
 pnpm lint:fix    # Check with ESLint and auto-fix
 pnpm format      # Format with Prettier
+pnpm typecheck   # Type check both src/ and scripts/
 ```
 
-Paths excluded from formatting are listed in [`.prettierignore`](./.prettierignore).
+Prettier skips the paths in `.gitignore`; additional exclusions are listed in [`.prettierignore`](./.prettierignore).
 
 ### Directory Structure
 
@@ -206,7 +199,13 @@ src/
     components/         # UI parts built with kintone-ui-component
     constants/
       config.ts         # Class names, DOM ids and other constants
-    i18n/               # i18next setup and translation resources
+    i18n/
+      index.ts          # Reads the kintone login user's language, inits i18next, and augments its types
+      languages.ts      # Supported-language registry and language resolution (pure, kintone-free)
+      locales/
+        en.ts           # Source of truth for translation keys and interpolation types
+        ja.ts           # Japanese translations (structurally constrained by en's type)
+        zh.ts           # Chinese translations (structurally constrained by en's type)
     styles/
       common.css        # Rules shared by the three CSS entry points
     types/
@@ -221,10 +220,15 @@ scripts/
   esbuild/
     build.ts            # esbuild build script
     plugins/
-      serve-mode-plugin.ts
+      build-log-plugin.ts
 .cert/                  # Locally-trusted certificate (generated)
   private.key
   private.cert
+.claude/
+  settings.json         # Claude Code settings (denies edits to generated directories)
+.github/
+  workflows/
+    ci.yml              # Runs lint and production build on pull requests and main
 .vscode/
   settings.json         # Enables the native TypeScript language server (useTsgo)
 manifest.json           # Plugin manifest for development (dev server URLs)
@@ -234,8 +238,8 @@ eslint.config.js        # ESLint configuration (project root)
 prettier.config.ts      # Prettier configuration
 .prettierignore         # Paths excluded from Prettier
 tsconfig.json
-mise.toml               # Node.js / pnpm version pinning for mise
 pnpm-workspace.yaml     # pnpm project settings (allowBuilds, etc.)
+LICENSE                 # Template license (MIT-0, removed by init)
 ```
 
 > **Scaling tip:** A plugin runs in three separate contexts, so the top level of `src/` is split by surface (`appPage`, `configPage`) to match the manifest one-to-one, and everything shared lives under `common/`. For small-to-medium plugins, writing event handlers directly in `desktop.ts` / `mobile.ts` is recommended. If a file grows large, split handlers into an `events/` directory next to it (e.g. `appPage/desktop/events/index-show.ts`) and re-export them from the entry point.
@@ -264,22 +268,14 @@ pnpm-workspace.yaml     # pnpm project settings (allowBuilds, etc.)
 
 ### 前提条件
 
-- Node.js（v26以上）
-- pnpm（v11以上）
-- [mise](https://mise.jdx.dev/)（推奨。上記バージョンの管理用）
+- [pnpm](https://pnpm.io/ja/installation)（v11以上）
 - [mkcert](https://github.com/FiloSottile/mkcert)（ブラウザに信頼されたローカル開発用証明書を生成するために必要）
 
-#### mise による Node.js / pnpm のバージョン管理
+#### Node.js と pnpm のバージョン
 
-[`mise.toml`](./mise.toml) に必要なバージョンを固定しているため、1コマンドで両方インストールできます。
+Node.js と pnpm の正確なバージョンは、`package.json` の `devEngines` に `onFail: "download"` 付きで固定しています。pnpm が自分自身を固定したバージョンに切り替え、固定した Node.js を `node_modules/.bin` にダウンロードするため、Node.js を自分でインストールする必要はありません。`pnpm` 経由で実行するスクリプトはこの Node.js を使います。直接実行する場合は `pnpm exec node` を使ってください。
 
-```bash
-mise install
-```
-
-このバージョン指定は推奨ではなく必須です。`package.json` の `devEngines` が `onFail: "error"` を指定しているため、Node.js / pnpm のバージョンが条件を満たさない場合、pnpm は警告ではなくエラーで停止します。
-
-`scripts/` 配下のスクリプトはすべて `.ts` ファイルを Node.js のネイティブな型ストリッピングで直接実行しています。トランスパイル工程がないため、Node.js v26 以上が必要です。
+`scripts/` 配下のスクリプトはすべて `.ts` ファイルを Node.js のネイティブな型ストリッピングで直接実行しています（トランスパイル工程はありません）。
 
 #### mkcert のインストール（マシンごとに1回だけ実行）
 
@@ -311,7 +307,7 @@ pnpm run init
 - `.cert` ディレクトリと `mkcert` によるローカル信頼済み証明書を作成します
 - `pnpm install` で依存パッケージをインストールします
 - プラグイン ID を決定する秘密鍵 `private.ppk` を生成します
-- テンプレート専用ファイル（`renovate.json`）が存在すれば削除します
+- テンプレート専用ファイル（`renovate.json`、`LICENSE`）が存在すれば削除します
 
 ### TypeScript の構成（v7 native）
 
@@ -361,7 +357,7 @@ pnpm exec tsc6 --noEmit
 
 native の TypeScript 言語サーバーに対応した VS Code が必要です。古いバージョンではこの設定は無視され、JavaScript 実装の言語サーバーにフォールバックします。
 
-`tsc --noEmit` の対象は `src/` のみです（[`tsconfig.json`](./tsconfig.json) の `include` を参照）。[`scripts/tsconfig.json`](./scripts/tsconfig.json) は、ビルドスクリプトをエディタが正しく型チェックできるようにするためのものです。これらは Node.js の型と `.ts` 拡張子付き import を必要としますが、ブラウザ向けのルート設定では意図的に除外しています。
+`pnpm typecheck` は `src/`（[`tsconfig.json`](./tsconfig.json)）と `scripts/`（[`scripts/tsconfig.json`](./scripts/tsconfig.json)）の両方を型チェックします。ビルドスクリプトは Node.js の型と `.ts` 拡張子付き import を必要としますが、ブラウザ向けのルート設定では意図的に除外しているため、専用の設定を分けています。
 
 ### 型定義の生成
 
@@ -394,9 +390,9 @@ pnpm exec kintone-dts-gen --base-url https://***.cybozu.com -u <username> -p <pa
 pnpm build:dev
 ```
 
-- 最初に TypeScript の型チェック（`tsc --noEmit`）を実行します
+- 最初に `pnpm typecheck`（`src/` と `scripts/` の両方の型チェック）を実行します
 - `manifest.json` から `dist/plugin.zip` をパッケージします（このモードでは js/css は HTTPS 経由で取得されるため、zip にはアイコンと `config.html` のみが入ります）
-- [https://localhost:9000](https://localhost:9000) でローカル HTTPS サーバーを起動し、リクエストごとに再ビルドします
+- [https://localhost:9000](https://localhost:9000) でローカル HTTPS サーバーを起動し、ファイル変更を監視して自動で再ビルドします
 
 > **警告:** プラグイン ID は `private.ppk` から決まり、kintone はアップロードされたプラグインを同じ ID を使うすべてのアプリに即時適用します。開発ビルドの zip は `https://localhost:9000` を参照するため、公開済みプラグインに上書きアップロードすると全利用者の環境が壊れます。開発用のアップロードは検証用の kintone 環境に限定してください。
 
@@ -406,7 +402,7 @@ pnpm build:dev
 pnpm build:prod
 ```
 
-- 最初に TypeScript の型チェック（`tsc --noEmit`）を実行します
+- 最初に `pnpm typecheck`（`src/` と `scripts/` の両方の型チェック）を実行します
 - `dist` ディレクトリに minify 済みのバンドルを出力します（source map なし）
 - `manifest.prod.json` からプラグインを `dist/plugin.zip` としてパッケージします
 
@@ -424,9 +420,10 @@ pnpm upload
 pnpm lint        # ESLint でチェック
 pnpm lint:fix    # ESLint でチェックし自動修正
 pnpm format      # Prettier でフォーマット
+pnpm typecheck   # src/ と scripts/ の両方を型チェック
 ```
 
-フォーマット対象外のパスは [`.prettierignore`](./.prettierignore) に記載しています。
+Prettier は `.gitignore` に書かれたパスを対象外にします。それ以外に除外するパスは [`.prettierignore`](./.prettierignore) に記載しています。
 
 ### ディレクトリ構成
 
@@ -450,7 +447,13 @@ src/
     components/         # kintone-ui-component による UI パーツ
     constants/
       config.ts         # クラス名・DOM の id などの定数
-    i18n/               # i18next の設定と翻訳リソース
+    i18n/
+      index.ts          # kintone ログインユーザーの言語取得・i18next 初期化・型拡張
+      languages.ts      # 対応言語の登録簿と言語判定（純粋関数・kintone 非依存）
+      locales/
+        en.ts           # 翻訳キーと補間変数の「正」となるロケール
+        ja.ts           # 日本語訳（en の構造に型で拘束される）
+        zh.ts           # 中国語訳（en の構造に型で拘束される）
     styles/
       common.css        # 3 つの CSS エントリポイントで共有するルール
     types/
@@ -465,10 +468,15 @@ scripts/
   esbuild/
     build.ts            # esbuild のビルドスクリプト
     plugins/
-      serve-mode-plugin.ts
+      build-log-plugin.ts
 .cert/                  # ローカル信頼済み証明書（生成物）
   private.key
   private.cert
+.claude/
+  settings.json         # Claude Code の設定（生成物ディレクトリの編集を禁止）
+.github/
+  workflows/
+    ci.yml              # プルリクエストと main で lint と本番ビルドを実行
 .vscode/
   settings.json         # native の TypeScript 言語サーバーを有効化（useTsgo）
 manifest.json           # 開発用の manifest（開発サーバーの URL）
@@ -478,8 +486,8 @@ eslint.config.js        # ESLint 設定（プロジェクトルート）
 prettier.config.ts      # Prettier 設定
 .prettierignore         # Prettier の対象外パス
 tsconfig.json
-mise.toml               # mise 用の Node.js / pnpm バージョン固定
 pnpm-workspace.yaml     # pnpm のプロジェクト設定（allowBuilds など）
+LICENSE                 # テンプレートのライセンス（MIT-0、init で削除）
 ```
 
 > **規模が大きくなったら:** プラグインは 3 つの独立した実行コンテキストを持つため、`src/` の最上位は manifest と 1 対 1 に対応する画面単位（`appPage`・`configPage`）で分割し、共有するものはすべて `common/` に置いています。小〜中規模のプラグインなら、イベントハンドラーは `desktop.ts` / `mobile.ts` に直接書くことを推奨します。ファイルが大きくなってきたら、隣に `events/` ディレクトリを作ってハンドラーを分割し（例: `appPage/desktop/events/index-show.ts`）、エントリポイントから再エクスポートしてください。

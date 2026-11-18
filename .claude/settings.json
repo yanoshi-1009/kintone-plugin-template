@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "deny": [
+      "Edit(**/dist/**)",
+      "Edit(**/node_modules/**)",
+      "Edit(**/build/**)"
+    ]
+  }
+}

@@ -3,36 +3,34 @@ import { ids } from "../common/constants/config";
 import type { PluginConfig } from "../common/types/PluginConfig";
 import PluginFooterBuilder from "./components/PluginFooterBuilder";
 
-((PLUGIN_ID: string) => {
-  "use strict";
-  const config = kintone.plugin.app.getConfig(PLUGIN_ID);
-  console.log("Current config: ", config);
+const PLUGIN_ID = kintone.$PLUGIN_ID;
+const config = kintone.plugin.app.getConfig(PLUGIN_ID);
+console.log("Current config: ", config);
 
-  const settingFooterDiv = document.getElementById(
-    ids.configFooter
-  ) as HTMLDivElement;
-  const footer = new PluginFooterBuilder(async () => {
-    const newConfig: PluginConfig = {};
-    await new Promise((resolve) => {
-      kintone.plugin.app.setConfig(newConfig, () => {
-        resolve("success");
-      });
+const settingFooterDiv = document.getElementById(
+  ids.configFooter
+) as HTMLDivElement;
+const footer = new PluginFooterBuilder(async () => {
+  const newConfig: PluginConfig = {};
+  await new Promise((resolve) => {
+    kintone.plugin.app.setConfig(newConfig, () => {
+      resolve("success");
     });
   });
-  footer.appendTo(settingFooterDiv);
+});
+footer.appendTo(settingFooterDiv);
 
-  const notification = new Notification({
-    type: "danger"
-  });
-  const spinner = new Spinner();
-  spinner.open();
-  try {
-    // Main process of config page
-  } catch (error) {
-    notification.text = (error as Error).message;
-    notification.open();
-    console.error(error);
-  } finally {
-    spinner.close();
-  }
-})(kintone.$PLUGIN_ID);
+const notification = new Notification({
+  type: "danger"
+});
+const spinner = new Spinner();
+spinner.open();
+try {
+  // Main process of config page
+} catch (error) {
+  notification.text = (error as Error).message;
+  notification.open();
+  console.error(error);
+} finally {
+  spinner.close();
+}

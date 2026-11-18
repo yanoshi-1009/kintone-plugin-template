@@ -1,12 +1,12 @@
 import { Button, Notification } from "kintone-ui-component";
-import i18n from "../../common/i18n/i18n";
+import { t } from "../../common/i18n";
 export default class PluginFooterBuilder {
   #saveButton = new Button({
-    text: i18n.t("config.label.save"),
+    text: t("config.label.save"),
     type: "submit"
   });
   #cancelButton = new Button({
-    text: i18n.t("config.label.cancel"),
+    text: t("config.label.cancel"),
     type: "normal"
   });
 

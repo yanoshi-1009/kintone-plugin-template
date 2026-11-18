@@ -1,30 +1,18 @@
 {
   "name": "kintone-plugin-master",
   "version": "1.0.0",
-  "description": "This is kintone plugin template.",
-  "keywords": [
-    "kintone"
-  ],
-  "author": "y.idakko@gmail.com",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/yanoshi-1009/kintone-plugin-template"
-  },
+  "private": true,
   "type": "module",
-  "engines": {
-    "node": ">=26.0.0"
-  },
   "devEngines": {
     "runtime": {
       "name": "node",
-      "version": ">=26.0.0",
-      "onFail": "error"
+      "version": "26.13.1",
+      "onFail": "download"
     },
     "packageManager": {
       "name": "pnpm",
-      "version": ">=11.0.0",
-      "onFail": "error"
+      "version": "12.19.0",
+      "onFail": "download"
     }
   },
   "scripts": {
@@ -34,8 +22,9 @@
     "format": "prettier --write .",
     "plugin:pack:dev": "cli-kintone plugin pack --input ./manifest.json --output ./dist/plugin.zip --private-key ./private.ppk",
     "plugin:pack:prod": "cli-kintone plugin pack --input ./manifest.prod.json --output ./dist/plugin.zip --private-key ./private.ppk",
-    "build:dev": "tsc --noEmit && pnpm run plugin:pack:dev && node ./scripts/esbuild/build.ts --mode=development",
-    "build:prod": "tsc --noEmit && node ./scripts/esbuild/build.ts --mode=production && pnpm run plugin:pack:prod",
+    "typecheck": "tsc --noEmit && tsc -p scripts --noEmit",
+    "build:dev": "pnpm run typecheck && pnpm run plugin:pack:dev && node ./scripts/esbuild/build.ts --mode=development",
+    "build:prod": "pnpm run typecheck && node ./scripts/esbuild/build.ts --mode=production && pnpm run plugin:pack:prod",
     "upload": "cli-kintone plugin upload --input ./dist/plugin.zip --watch"
   },
   "dependencies": {

@@ -1,6 +1,6 @@
-import type { Lang } from "../../types/Lang";
+import type { Translations } from "./en";
 
-export const ja: Lang = {
+const ja: Translations = {
   config: {
     label: {
       save: "保存",
@@ -8,3 +8,5 @@ export const ja: Lang = {
     }
   }
 };
+
+export default ja;
