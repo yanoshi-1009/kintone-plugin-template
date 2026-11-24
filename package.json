@@ -30,7 +30,7 @@
   "dependencies": {
     "@kintone/rest-api-client": "6.6.1",
     "dayjs": "1.11.23",
-    "i18next": "27.1.2",
+    "i18next": "27.1.5",
     "kintone-ui-component": "1.26.0"
   },
   "devDependencies": {
