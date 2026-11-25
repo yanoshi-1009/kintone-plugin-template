@@ -28,7 +28,7 @@
     "upload": "cli-kintone plugin upload --input ./dist/plugin.zip --watch"
   },
   "dependencies": {
-    "@kintone/rest-api-client": "6.6.1",
+    "@kintone/rest-api-client": "7.0.1",
     "dayjs": "1.11.23",
     "i18next": "27.1.5",
     "kintone-ui-component": "1.26.0"
